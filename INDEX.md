@@ -6,16 +6,16 @@ preferences from people efficiently and effectively, and how to build them into 
 website names three threads: inverse reinforcement learning, metric elicitation, and reinforcement
 learning from human feedback. It mixes lectures, invited speakers and student-led paper discussions,
 with homework (60%) and a group project (40%). Lecture 6 is a guest lecture by the philosopher Daniel
-Frederick Webber, and lecture 7 one by Colin Megill of Polis, an open source platform for mapping
-public opinion.
+Frederick Webber, lecture 7 one by Colin Megill of Polis, an open source platform for mapping
+public opinion, and lecture 8 one by Joseph Jay Williams on adaptive experimentation.
 
-> **Coverage: lectures 1–7 of 8.** This knowledge base covers **lecture 1 (Introduction)**,
+> **Coverage: all 8 catalog lectures.** This knowledge base covers **lecture 1 (Introduction)**,
 > **lecture 2 (Preference Models)**, **lecture 3 (Model-based Preference Optimization, on metric
-> elicitation)**, **lecture 4 (Mechanism Design)**, **lecture 5 (Human-centered Design)** and
-> **lecture 6 (Ethics, a guest lecture on value alignment)** and **lecture 7 (Voting, a guest lecture
-> on Polis and Community Notes)** of the eight catalog lectures. Questions about the guest lecture by
-> Joseph Jay Williams (lecture 8) **cannot be answered from this KB yet**. Say so rather than
-> answering from the lecture 1 overview, which only previews it.
+> elicitation)**, **lecture 4 (Mechanism Design)**, **lecture 5 (Human-centered Design)**,
+> **lecture 6 (Ethics, a guest lecture on value alignment)**, **lecture 7 (Voting, a guest lecture
+> on Polis and Community Notes)** and **lecture 8 (a guest lecture by Joseph Jay Williams on adaptive
+> experiments and Thompson sampling)**. The catalog holds 8 of the course's sessions, not the whole
+> schedule. The missing sessions that the lectures refer to are named below; they are not in this KB.
 >
 > **No voting lecture.** Despite its catalog title, lecture 7 is not the course's lecture on voting.
 > The course's voting and social-choice lectures (lecture 4 refers back to them) are not in the
@@ -24,7 +24,10 @@ public opinion.
 > the other lectures say. Some sessions on the schedule are not in the catalog at all. Lecture 2 defers the
 > ideal point model to one of them, and lecture 3 builds on an active-learning lecture (Oct 14)
 > that is not in the catalog either. Lecture 4 follows bandit and Bayesian-optimization sessions
-> (Oct 21 and 23) that are not in the catalog.
+> (Oct 21 and 23) that are not in the catalog, so the KB has **no account of dueling bandits or Bayesian
+> optimization as the course taught them**. Lecture 8, a guest lecture, is its only worked treatment
+> of a bandit algorithm (Thompson sampling on two arms with yes-or-no rewards); see
+> [bandits and adaptive experiments](wiki/bandits-and-adaptive-experiments.md).
 >
 > **No slides.** The course has not published its slides for any offering, so this KB is built
 > from the lecture transcripts. Pages cite **transcript timestamps** (≈MM:SS), not slide numbers.
@@ -38,8 +41,8 @@ public opinion.
 > Optimization via Preference Elicitation" lecture; lecture 4 is the Oct 28 "Aggregated Preference
 > Optimization via Mechanism Design" lecture; lecture 5 is the Nov 11 "Human-centered Design" lecture;
 > lecture 6, titled *Ethics* in the catalog, is the Nov 18 guest lecture by Daniel Frederick Webber;
-> lecture 7, titled *Voting* in the catalog, is the Dec 2 guest lecture by Colin Megill (Polis).
-> Each page gives the evidence.
+> lecture 7, titled *Voting* in the catalog, is the Dec 2 guest lecture by Colin Megill (Polis);
+> lecture 8 is the Oct 30 guest lecture by Joseph Jay Williams. Each page gives the evidence.
 
 ## Lectures
 
@@ -124,8 +127,23 @@ public opinion.
   disagree both find them helpful, "a collective response system"), open problems (new clustering,
   vote prediction), and a student's challenge to calling Polis "emergent". Includes a table of every
   question.
+- [Lecture 8 — Guest Lecture: Joseph Jay Williams (adaptive experiments and Thompson sampling)](wiki/08-guest-lecture-joseph-jay-williams.md):
+  the Oct 30 guest lecture on adaptive experimentation for behaviour change. Covers his program's goal
+  ("to coach behavior change") and everyday touch points made into experiments ("AdapComps": messages,
+  emails, website explanations, LLM answers); the objection that small exchanges lack statistical
+  power, and qualitative A/B comparisons with the AB Scribe tool; assigning versions in proportion to
+  the probability each is best (weighted randomization); where those probabilities come from
+  (statistical models, experts, crowds, a person reading the data); a stress-message experiment with
+  first-year programming students; the beta–Bernoulli bandit and Thompson sampling, with worked
+  numbers; turning people's beliefs into pseudo-counts and weighting experts, gaming and the "hippo";
+  LLMs to simulate people for priors; personalized interventions and why LLM interfaces matter;
+  contextual bandits and the statistical minority the average hides; and why he no longer recommends
+  plain Thompson sampling (inflated false positives, lost power), with Epsilon Thompson sampling, his
+  group's adaptive version, and the algorithm-induced test statistic. Includes a table of every
+  question.
 
-Catalog lectures not yet in this KB: 8 Guest Lecture: Joseph Jay Williams.
+Every catalog lecture is now in this KB. The schedule sessions missing from the catalog are listed in
+the coverage note above.
 
 ## Topics
 
@@ -136,8 +154,16 @@ Each topic page gathers one concept across lectures, and says at the top which l
   voting and social-choice lectures are not in this KB. Covers aggregation as a change of scale
   (lecture 1), one shared utility or many (lecture 2), the passing references to social choice in
   lectures 4 and 5, lecture 6's moral theories as rules for weighing people (sums, weighted sums,
-  maximin), Polis and Community Notes as consensus across difference (lecture 7), a table comparing
-  the approaches, and gaming. Lectures 1, 2 and 4–7 (lecture 7 is the main source).
+  maximin), Polis and Community Notes as consensus across difference (lecture 7), weighting people's
+  beliefs and the "highest paid person's opinion" (lecture 8), a table comparing the approaches, and
+  gaming. Lectures 1, 2 and 4–8 (lecture 7 is the main source).
+- [Bandits and adaptive experiments](wiki/bandits-and-adaptive-experiments.md): what the KB has on
+  bandits, with the warning that the course's own dueling-bandit and Bayesian-optimization lectures are
+  not in it. Covers where bandits sit in the course plan (lectures 1, 3, 4), arms, rewards and policies,
+  Thompson sampling on a beta–Bernoulli model with worked numbers, priors from people's beliefs,
+  contextual bandits for subgroups, what adaptive assignment does to statistical tests (false
+  positives, power, Epsilon Thompson sampling, the algorithm-induced test), a table comparing
+  assignment policies, and regret (lecture 4). Lectures 1, 3, 4 and 8 (lecture 8 is the main source).
 
 - [Discrete choice models: utility, noise and the logit family](wiki/discrete-choice-models.md): the
   model (utility = deterministic part + noise), identification only up to ordering, a table mapping
@@ -165,7 +191,8 @@ Each topic page gathers one concept across lectures, and says at the top which l
   queries as tools for enabling a human–AI interaction, and human preference as an evaluation
   signal (lecture 5); what preference signals can and cannot stand in for, and A-versus-B against
   typed feedback (lecture 6); participants writing the statements others vote on, vote prediction,
-  and elicitation at scale (lecture 7). Lectures 1–7.
+  and elicitation at scale (lecture 7); asking for a probability that one option is better, turning it
+  into pseudo-counts, and LLMs as stand-ins for setting priors (lecture 8). Lectures 1–8.
 - [Mechanism design: auctions, incentives and truthful elicitation](wiki/mechanism-design.md): the
   vocabulary (types, allocation, payments, revenue, utility), incentive compatibility at three levels
   of information and individual rationality, a table comparing posted prices, first- and
@@ -176,8 +203,9 @@ Each topic page gathers one concept across lectures, and says at the top which l
   cares about HCI, technology-centric versus user-centric design, design thinking and the double
   diamond, where the course's preference tools fit (enabling an interaction, between designing and
   evaluating it), posing questions people can answer (metric elicitation, PromptCharm), trust and
-  reliance, transparency, and evaluating human–AI systems (how, what, who, when). Lectures 1, 3 and 5
-  (lecture 5 is the main source).
+  reliance, transparency, and evaluating human–AI systems (how, what, who, when), and why interfaces
+  to LLMs matter (AB Scribe, an LLM thought partner). Lectures 1, 3, 5 and 8 (lecture 5 is the main
+  source).
 - [Value alignment: intentions, preferences, interests and morality](wiki/value-alignment.md): what
   "what we really want" can mean, with a table of the four readings, the problem each brings and where
   the course's preference methods fit; the paperclip AI; paternalism, autonomy and defaults; aligning
@@ -204,7 +232,8 @@ Each topic page gathers one concept across lectures, and says at the top which l
   fairness, accountability (the asylum-translation example), and stakeholder groups as evaluators
   (lecture 5); people other than the user, paternalism and defaults, and the ESR statement's
   questions about whose interests a project represents (lecture 6); who is in the sample, synthetic
-  participants, and replacing people with models (lecture 7). Lectures 1–7.
+  participants, and replacing people with models (lecture 7); the statistical minority whose best option
+  is the opposite of the average's (lecture 8). Lectures 1–8.
 
 ## Raw materials
 

@@ -12,8 +12,10 @@ comparison step and comments on language-model preference data; and three remark
 [lecture 3](03-model-based-preference-optimization.md), which is about classification metrics, not
 language models; and two applications in [lecture 4](04-mechanism-design.md), on pricing prompt
 completions and paying labellers; and [lecture 5](05-human-centered-design.md), which reads
-preference tuning as a fix for an interface problem. Later lectures are not yet in this knowledge
-base.
+preference tuning as a fix for an interface problem. The page does not draw on lectures 6–8. See
+[value alignment](value-alignment.md) for lecture 6 on the goal of alignment as distinct from the
+training method, and [lecture 8](08-guest-lecture-joseph-jay-williams.md) for a guest lecturer's
+question of why chatbots do not A/B test their own answers (≈6:59, ≈7:46).
 
 ## Why it matters to the course
 

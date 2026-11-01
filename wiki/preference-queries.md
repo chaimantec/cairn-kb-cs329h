@@ -6,7 +6,8 @@ many questions to ask, and what to assume about the answers.
 
 **Sources so far:** [lecture 1](01-introduction.md), [lecture 2](02-preference-models.md),
 [lecture 3](03-model-based-preference-optimization.md), [lecture 4](04-mechanism-design.md),
-[lecture 5](05-human-centered-design.md), [lecture 6](06-ethics.md) and [lecture 7](07-voting.md).
+[lecture 5](05-human-centered-design.md), [lecture 6](06-ethics.md), [lecture 7](07-voting.md) and
+[lecture 8](08-guest-lecture-joseph-jay-williams.md).
 Lecture 2 builds the models of human choice that sit on top of these queries; they have their own
 page, [discrete choice models](discrete-choice-models.md). Lecture 3 counts the queries a specific
 elicitation problem needs, and asks what kind of question people can answer. Lecture 4 asks what
@@ -17,8 +18,10 @@ its own page, [human–AI interaction](human-ai-interaction.md). Lecture 6 asks 
 signal can and cannot tell you about what a person really wants; that material has its own page,
 [value alignment](value-alignment.md). Lecture 7, a guest lecture on Polis, adds a query format in
 which participants write the statements that others vote on, and the prediction of a person's votes
-from their history. The guest lecture by Joseph Jay Williams (catalog lecture 8) is not yet in this
-knowledge base.
+from their history. Lecture 8, a guest lecture by Joseph Jay Williams on adaptive experiments, asks
+people for a different thing: their probability that one option is better than another, which can be
+turned into a bandit's prior. The bandit side has its own page,
+[bandits and adaptive experiments](bandits-and-adaptive-experiments.md).
 
 ## Efficient and effective elicitation
 
@@ -278,8 +281,39 @@ scale": interactions at 10 or 100 people differ from those at 10,000 (≈1:11:50
 detail after they submit a statement" (≈44:04). See [lecture 7](07-voting.md) and
 [preference aggregation](preference-aggregation.md).
 
+## Asking for a probability that one option is better
+
+Lecture 8's guest lecturer, Joseph Jay Williams, asks people a question none of the earlier lectures
+pose: not which option they prefer, but how likely they think it is that one option is better for the
+people who will receive it. "What's the probability A is better than B?" (lecture 8, ≈11:39). His
+proposal is to assign options in proportion to that belief rather than all-or-nothing, which he calls
+weighted randomization (≈13:10, ≈13:57).
+
+Such a belief can be made precise. Someone who says 70% can be asked, "could you represent that as
+fictional successes and failures?", say eight successes and two failures for A against five
+and five for B, which turns the judgment into the beta distributions a Thompson sampling bandit uses
+(≈37:57, ≈38:43). "So now this is super interesting, right, because we can actually formalize these
+probabilities that are so slippery" (≈38:43). He wants research on how people express these
+probabilities, and on "interactive explorers or tools that help them formalize their intuitions"
+(≈38:43, ≈39:30). A person can also read an experiment's data and give their own probability, to be
+combined with a model's (≈25:28).
+
+Two objections from the audience apply to any elicitation. One questioner doubts that probabilities are
+a good signal at all, given how badly people quantify: "I wonder how important it is that the signal is
+probabilities, given that I guess I don't trust probabilities and that mean anything" (≈29:21).
+Williams calls these "great empirical questions" (≈29:21). Another asks whether a language model could
+"refine your prior" in place of slow human feedback; Williams points to work on "using LLMs to simulate
+human behavior" and calls it a "fantastic idea, to get priors" (≈43:27, ≈44:12). Lecture 7 raised the
+risks of the same move, synthetic participants standing in for real ones (see
+[whose preferences](whose-preferences.md#who-is-in-the-sample-and-whether-they-are-people)). See
+[lecture 8](08-guest-lecture-joseph-jay-williams.md#where-the-probabilities-come-from) and
+[bandits and adaptive experiments](bandits-and-adaptive-experiments.md).
+
 ## Related pages
 
+- [Bandits and adaptive experiments](bandits-and-adaptive-experiments.md): dueling bandits, Thompson
+  sampling, and turning people's beliefs into a bandit's prior.
+- [Lecture 8 — Guest Lecture: Joseph Jay Williams](08-guest-lecture-joseph-jay-williams.md)
 - [Preference aggregation](preference-aggregation.md): how votes from many people are combined.
 - [Lecture 7 — Voting (guest lecture on Polis)](07-voting.md)
 - [Whose preferences](whose-preferences.md): who gets asked, and what that does to the model.

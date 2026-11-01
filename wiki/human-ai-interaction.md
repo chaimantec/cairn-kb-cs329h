@@ -11,7 +11,8 @@ tool appropriately, and how to evaluate a human–AI system.
 [lecture 3](03-model-based-preference-optimization.md) shows how hard it is to pose a preference
 question people can answer. Lecture 5 calls its own treatment caricatured on purpose: "I'm going to
 take somewhat caricatured extreme perspectives on many fields in order to make a point" (lecture 5,
-≈1:39). Later lectures are not yet in this knowledge base.
+≈1:39). [Lecture 8](08-guest-lecture-joseph-jay-williams.md), a guest lecture on adaptive experiments, argues that interfaces to
+language models matter as much as the models, with two of the speaker's tools as examples.
 
 ## Why the course cares about HCI
 
@@ -87,6 +88,14 @@ an interface that exposes the automatic prompt rewrite, offers styles and term w
 exploration and history, and shows which image regions each word affected (≈49:28–54:10). See
 [asking humans for preferences](preference-queries.md).
 
+**Interfaces to language models.** Lecture 8's guest lecturer, Joseph Jay Williams, makes the same
+argument from his own tools. "It's the interfaces on LLMs that matter. This kind of interface is night
+and day" (lecture 8, ≈47:17). Give people ways of interacting with the model, tell them what to say, give
+them custom prompts (≈47:17). His examples are AB Scribe, a tool for writing an email in which chosen
+pieces become places to try alternative versions, generated with an LLM, and to compare them before
+sending (≈20:05, ≈20:53), and an LLM "thought partner" that writes messages to send yourself when you
+procrastinate, in a style you choose (≈44:59, ≈46:30, ≈47:17). See [lecture 8](08-guest-lecture-joseph-jay-williams.md).
+
 ## Trust and reliance
 
 **Trust** is "some evaluation of the belief for confidence and reliability, integrity, honesty"; it is
@@ -148,3 +157,5 @@ Lecture 5 organizes evaluation by four questions: how, what, who and when (≈1:
   [Lecture 3 — Model-based Preference Optimization](03-model-based-preference-optimization.md).
 - [Value alignment](value-alignment.md): lecture 6 on what "what the user really wants" can mean, and
   paternalism in personalized products.
+- [Lecture 8 — Guest Lecture: Joseph Jay Williams](08-guest-lecture-joseph-jay-williams.md): AB Scribe,
+  an LLM as a thought partner, and why interfaces to LLMs matter.

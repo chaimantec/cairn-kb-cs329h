@@ -15,8 +15,13 @@ lecture 4 recording does not take it up. The catalog's *Voting* lecture ([lectur
 lecture on Polis, not the course's social-choice lecture. How Polis copes with participants who game
 it, without prices or payments, is summarized in
 [preference aggregation](preference-aggregation.md#when-participants-game-it). The guest lecture by
-Joseph Jay Williams (8), which lecture 4 says uses related ideas for A/B testing and online learning
-(≈1:20:40), is not yet in this knowledge base.
+Joseph Jay Williams ([lecture 8](08-guest-lecture-joseph-jay-williams.md)), which lecture 4 says uses
+related ideas for A/B testing and online learning (≈1:20:40), is about adaptive experiments and
+Thompson sampling, not mechanisms. It touches strategic behaviour once: a questioner worries that people
+asked for their confidence could overstate it to sway a decision, and the speaker treats that as an open
+research question (lecture 8, ≈41:04). See
+[bandits and adaptive experiments](bandits-and-adaptive-experiments.md) and
+[preference aggregation](preference-aggregation.md#when-participants-game-it).
 
 ## Why a preference course studies auctions
 

@@ -3,24 +3,24 @@
   "course": {
     "code": "CS329H",
     "title": "Machine Learning from Human Preferences",
-    "instructor": "Sanmi Koyejo; lecture 6 is a guest lecture by Daniel Frederick Webber, lecture 7 a guest lecture by Colin Megill (Polis)",
+    "instructor": "Sanmi Koyejo; lecture 6 is a guest lecture by Daniel Frederick Webber, lecture 7 a guest lecture by Colin Megill (Polis), lecture 8 a guest lecture by Joseph Jay Williams",
     "term": "Autumn 2024",
     "catalogId": "5a0cb2cc-9521-422c-aaf7-41bbac8291e8",
     "courseUrl": "https://web.stanford.edu/class/cs329h/fall2024/"
   },
   "coverage": {
-    "lecturesCovered": 7,
+    "lecturesCovered": 8,
     "lecturesTotal": 8,
-    "transcripts": 7,
-    "wikiLecturePages": 7,
-    "wikiTopicPages": 10
+    "transcripts": 8,
+    "wikiLecturePages": 8,
+    "wikiTopicPages": 11
   },
   "materials": {
     "primary": "transcripts",
     "slideDecks": {
       "available": 0,
       "transcribed": 0,
-      "note": "The course publishes no slides. The Autumn 2024 site, its slides/ path, and the Autumn 2023 and Autumn 2025 archives were checked on 2026-11-01, and again before lectures 2, 3, 4, 5, 6 and 7 were added. Before lectures 6 and 7 the course root, which now carries an Autumn 2026 offering, was checked too; it links no deck."
+      "note": "The course publishes no slides. The Autumn 2024 site, its slides/ path, and the Autumn 2023 and Autumn 2025 archives were checked on 2026-11-01, and again before lectures 2, 3, 4, 5, 6, 7 and 8 were added. Before lectures 6, 7 and 8 the course root, which now carries an Autumn 2026 offering, was checked too; it links no deck."
     },
     "textbook": {
       "url": "https://mlhp.stanford.edu/",
@@ -40,9 +40,9 @@
       "claude-sonnet-5-5"
     ],
     "caveats": [
-      "Partial coverage: lectures 1-7 of 8. Topic pages draw on lectures 1-7 only; the discrete-choice-models page on lectures 1-2, the mechanism-design page mainly on lecture 4, the human-ai-interaction page mainly on lecture 5, the value-alignment page mainly on lecture 6, the preference-aggregation page mainly on lecture 7.",
+      "All 8 catalog lectures are covered, but the catalog is not the whole schedule. Sessions the lectures refer to that are not in the catalog, and so not in the KB: the Oct 7 social-choice/voting session, the Sep 30 individual-preference-models session (ideal point model), the Oct 14 active-learning session, and the Oct 21 and Oct 23 dueling-bandits and Bayesian-optimization sessions. Topic pages draw on lectures 1-8; the discrete-choice-models page on lectures 1-2 only, the mechanism-design page mainly on lecture 4, the human-ai-interaction page mainly on lecture 5, the value-alignment page mainly on lecture 6, the preference-aggregation page mainly on lecture 7, the bandits-and-adaptive-experiments page mainly on lecture 8.",
       "Transcript-only: no slides exist publicly, so papers and references shown on the slides are described as the lectures describe them and are not named or cited. Formulas on the wiki pages are rebuilt from what the lecturer says aloud, not read off slides.",
-      "Transcripts were copy-edited by a Sonnet subagent and checked by script in the parent (identical timestamp sequence, number inventory, per-paragraph word-count ratio keyed by timestamp). Lecture 1 has 22 passages marked [Ed: unclear], lecture 2 has 21, lecture 3 has 33, lecture 4 has 37, lecture 5 has 29, lecture 6 has 4, lecture 7 has 77. One lecture-2 paragraph (1:11:28) dropped by the agent was restored in the parent; in lecture 3 a student sentence the agent had moved from 3:54 into 3:07 was moved back. In lecture 7 a dropped word was restored and the captions' lower-case 'discord' (disagreement) restored from the agent's 'Discord'.",
+      "Transcripts were copy-edited by a Sonnet subagent and checked by script in the parent (identical timestamp sequence, number inventory, per-paragraph word-count ratio keyed by timestamp). Lecture 1 has 22 passages marked [Ed: unclear], lecture 2 has 21, lecture 3 has 33, lecture 4 has 37, lecture 5 has 29, lecture 6 has 4, lecture 7 has 77, lecture 8 has 163. One lecture-2 paragraph (1:11:28) dropped by the agent was restored in the parent; in lecture 3 a student sentence the agent had moved from 3:54 into 3:07 was moved back. In lecture 7 a dropped word was restored and the captions' lower-case 'discord' (disagreement) restored from the agent's 'Discord'. In lecture 8 one repeated word the agent added was removed.",
       "The lecture-1 recording ends at about 1:17, as the lecturer turns to choice models; that material is not in the video.",
       "Lecture 2 defers the ideal point model to the next lecture and skips its planned exercises; neither is in the lecture 2 recording, and the schedule's next individual-preference-models lecture (Sep 30) is not in the catalog.",
       "Lecture 3 builds on an active-learning lecture (Oct 14 on the schedule) that is not in the catalog. It covers the first of three planned papers in full, sketches the second (inverse decision theory) and defers the third (metric elicitation and mechanism design). It does not give the formula linking the metric weights to the classifier threshold; the wiki leaves it out too.",
@@ -52,7 +52,8 @@
       "Lecture 5 is built on tutorials and papers shown on its slides. The tutorials' author, the author of a quoted line about technologies that disappear, a code-review tool and an interpretability method are garbled in the captions and kept as captioned; the papers behind the prompting figure and the pair-programming evaluation are not named aloud and are not identified. The one system named aloud, PromptCharm, and the terms 'five whys', 'cross attention', 'underreliance' and 'overreliance' are restored from the captions' sound ('prompt charm', 'five W's', 'cross detention', 'underlyance', 'overreiance'). Lecture 3 said it might use its metric-elicitation stakeholder study in the HCI lecture; the lecture 5 recording does not mention metric elicitation.",
       "Lecture 6 is a guest lecture by Daniel Frederick Webber (the course site's spelling; the captions say 'Dan Weber'). The name Bostrom, to whom it attributes the paperclip example, is restored from the captions' 'Bostonramm' and 'Boston'; no course document prints it, and the book is not named aloud. A moral-philosophy case the captions call the 'scan transmitter room case' is left as captioned. The 2020 work by Jason Gabriel that it quotes is on a slide and not named. The recording ends at about 1:11, partway through the list of risks for the ESR statement; the ESR instructions and templates it mentions are not linked from the 2024 course site.",
       "No lecture on voting or social choice: the catalog's lecture 7, titled 'Voting', is the Dec 2 guest lecture by Colin Megill on Polis. The course's own voting and social-choice lectures (the schedule's Oct 7 session; lecture 4 refers back to 'the voting lectures') are not in the catalog, so the KB has no account of voting rules or social choice theory as the course taught them.",
-      "Lecture 7 is a guest lecture given from a browser, not slides; its edited transcript marks 77 passages unclear, mostly names. The speaker's name and the platform ('McIll', 'Polus') are restored from the course site. Researchers, article authors, place names and several algorithm names are kept as captioned and marked unclear; DeepMind ('de mind') is restored from sound alone, and the DeepMind paper's title ends in words captioned 'democratic liberation'. The papers shown (the Anthropic paper, the DeepMind paper, the Birdwatch paper, a paper on generalizing Community Notes) are described, not cited. The instructor's turns in the audience are inferred from content; the wiki names him only where the attribution is secure."
+      "Lecture 7 is a guest lecture given from a browser, not slides; its edited transcript marks 77 passages unclear, mostly names. The speaker's name and the platform ('McIll', 'Polus') are restored from the course site. Researchers, article authors, place names and several algorithm names are kept as captioned and marked unclear; DeepMind ('de mind') is restored from sound alone, and the DeepMind paper's title ends in words captioned 'democratic liberation'. The papers shown (the Anthropic paper, the DeepMind paper, the Birdwatch paper, a paper on generalizing Community Notes) are described, not cited. The instructor's turns in the audience are inferred from content; the wiki names him only where the attribution is secure.",
+      "Lecture 8 is the Oct 30 guest lecture by Joseph Jay Williams; the catalog places it last. The course's own bandit lectures (Oct 21 dueling bandits, Oct 23 Bayesian optimization) are not in the catalog, so lecture 8's two-arm Thompson sampling is the KB's only worked bandit algorithm. Its edited transcript marks 163 passages unclear, mostly short phrases. Restored from sound alone and listed in its header: the coined term 'AdapComp' (captioned 'adap comp', 'adab comp', 'Adcom', 'ADC'), CHI ('Kai'), Wald ('wall'), inverse probability weighting ('in Proby waiting'), Trinidad and Tobago ('TR and Tobago'), Khan Academy, ChatGPT, Berkeley. The adaptive algorithm's name ('TS positive', 'TS postf') and the stress-message paper's authors are kept as captioned. Several percentages are evident slips ('8%' for 80%, '7%' for 70%); the false positive rate given for Thompson sampling varies through the talk (15%, 13%, and figures captioned '30%' and '133%'), and the wiki reports each as said. No turn is securely the instructor's; audience voices are 'a questioner'."
     ]
   },
   "entryPoint": "INDEX.md",

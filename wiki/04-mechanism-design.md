@@ -512,7 +512,8 @@ utility, or "some other notion of social welfare".
 
 The next lecture is an invited talk by **Joseph Jay Williams**, on related ideas used "for AB testing
 and other kinds of online learning, preference optimization settings" (≈1:20:40). The catalog places
-it last, as lecture 8; it is not yet in this knowledge base.
+it last, as [lecture 8](08-guest-lecture-joseph-jay-williams.md). That talk is about adaptive A/B
+testing with Thompson sampling; it does not return to mechanism design.
 
 ## Further reading
 

@@ -9,8 +9,8 @@ many modern pipelines, because those pipelines reuse the same ideas
 page has the full argument, the student discussion and the history.
 
 **Sources so far:** [lecture 1](01-introduction.md), which names discrete choice as the course's
-technical core, and [lecture 2](02-preference-models.md), which builds the models. Later lectures
-are not yet in this knowledge base. The course publishes no slides, so the formulas here are
+technical core, and [lecture 2](02-preference-models.md), which builds the models. The page draws
+on those two lectures only. The course publishes no slides, so the formulas here are
 rebuilt from what the lecturer says aloud, in his symbols.
 
 ## Where the course places them
@@ -124,12 +124,12 @@ matter (≈55:53, ≈56:39). See [whose preferences](whose-preferences.md).
   and the kind of data you have affects how complex a model you can fit (≈1:07:36–1:17:39). See
   [revealed versus stated preferences](preference-queries.md#revealed-versus-stated-preferences).
 
-## Not yet in this knowledge base
+## Not in this knowledge base
 
 Lecture 2 defers the **ideal point model** to the next lecture and skips its planned exercises
 (≈1:17:39). The schedule's next lecture on individual preference models (Sep 30) is not in the
-catalog, and the catalog's next lecture, *Model-based Preference Optimization*, is not yet in this
-knowledge base.
+catalog. The catalog's next lecture, [*Model-based Preference Optimization*](03-model-based-preference-optimization.md),
+is on metric elicitation, and no later lecture in this knowledge base mentions the ideal point model.
 
 ## Related pages
 

@@ -16,8 +16,10 @@ paternalism, and the ESR statement's questions about whose interests a project r
 defers accountability, fairness, transparency and ethics to "a separate lecture" (≈57:58). Lecture 6
 takes up ethics as value alignment and does not return to accountability, fairness or transparency.
 [Lecture 7](07-voting.md), a guest lecture on Polis that the catalog titles *Voting*, adds who is
-in the sample, synthetic participants, and the risk of replacing people with models. Combining many
-people's preferences has its own page, [preference aggregation](preference-aggregation.md).
+in the sample, synthetic participants, and the risk of replacing people with models.
+[Lecture 8](08-guest-lecture-joseph-jay-williams.md), a guest lecture on adaptive experiments, adds the minority whose best option
+is the opposite of the average's. Combining many people's preferences has its own page,
+[preference aggregation](preference-aggregation.md).
 
 ## Choosing the humans
 
@@ -199,11 +201,35 @@ research and further intermediate the public from institutions" (≈27:50). A sy
 that it's that good" (≈29:25, ≈30:10). See [preference aggregation](preference-aggregation.md) for
 how Polis combines the people it does have.
 
+## The minority the average hides
+
+Lecture 8's guest lecturer, Joseph Jay Williams, makes lecture 2's question of one model or one each
+concrete in an experiment. "How can you use adaptive experiments to discover when the best intervention
+for a statistical minority is the opposite of what's best on average?" (lecture 8, ≈48:02). Students in
+an online course got one of two messages encouraging them to write a question. On average the
+peer-focused message did better, but for the 20% who had got the previous problem wrong, the
+self-focused message was "substantially better" (≈48:47, ≈50:20). Combined, "they get washed out", and a
+policy of giving everyone the average winner means "you're hurting a statistical minority" (≈50:20).
+
+He thinks the problem is worse without experiments. If three students told him after class that they
+liked one explanation, he would give it to everyone and never discover the subgroup (≈50:20). His fix is
+a contextual bandit that assigns separately within each group and keeps collecting data where it is
+unsure, which in his study gave the minority better outcomes and more power to detect the difference
+(≈51:06–52:40). See
+[bandits and adaptive experiments](bandits-and-adaptive-experiments.md#contextual-bandits-when-the-average-is-wrong-for-a-subgroup).
+
+His wider aim also bears on whose decisions count: "8 billion people are not going to run ABs" (≈16:14),
+so he wants methods that work for people writing a single email, not only for organizations with
+enough users for statistical power (≈16:14–18:32).
+
 ## Related pages
 
 - [Preference aggregation](preference-aggregation.md): combining many people's preferences, and what
   the course says about voting and social choice.
 - [Lecture 7 — Voting (guest lecture on Polis)](07-voting.md)
+- [Lecture 8 — Guest Lecture: Joseph Jay Williams](08-guest-lecture-joseph-jay-williams.md): the
+  statistical minority in an adaptive experiment.
+- [Bandits and adaptive experiments](bandits-and-adaptive-experiments.md)
 - [Value alignment](value-alignment.md): intentions, preferences, interests and morality as targets.
 - [Lecture 6 — Ethics](06-ethics.md)
 - [Asking humans for preferences](preference-queries.md): rationality, noise and strategic behaviour.

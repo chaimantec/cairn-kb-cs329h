@@ -18,7 +18,8 @@ raises aggregation as a course question. [Lecture 2](02-preference-models.md) as
 share one utility. [Lecture 4](04-mechanism-design.md) ties mechanism design to social choice.
 [Lecture 5](05-human-centered-design.md) names social choice as a design tool, and
 [lecture 6](06-ethics.md) sketches moral theories that weigh different people's good against each
-other.
+other. [Lecture 8](08-guest-lecture-joseph-jay-williams.md), a guest lecture on adaptive experiments, weights several people's
+beliefs about which option is better, and warns against the "highest paid person's opinion".
 
 ## Why aggregation comes up
 
@@ -68,6 +69,14 @@ people's good (lecture 6, ≈54:12–57:16; see [value alignment](value-alignmen
 The transmitter-room case in that lecture shows how far apart these rules can land on the same
 situation.
 
+Lecture 8 weighs people's **beliefs** rather than their good. Joseph Jay Williams turns each person's
+judgment that one email or explanation is better into fictional successes and failures for a bandit's
+prior, and lets someone who knows less ask that an expert's counts be weighted more: "weight his 10
+times mine" (lecture 8, ≈39:30). "And now that's a way of combining expertise" (≈40:19). He sees the
+same need in everyday group decisions, such as where to go for lunch or a retreat, which are usually
+settled by the "hippo", the "highest paid person's opinion": "Don't trust the hippo" (≈41:52, ≈42:41).
+See [lecture 8](08-guest-lecture-joseph-jay-williams.md#turning-peoples-beliefs-into-betas-and-weighting-people).
+
 ## Consensus across difference: Polis and Community Notes
 
 Lecture 7 describes an approach that does not pick a winner. In **Polis**, participants submit short
@@ -108,6 +117,7 @@ in over time", so the groups a statement summarizes can change after it is rated
 | Moral theories | Each person's good | A right act: the largest sum, a weighted sum, or the smallest worst complaint | 6 |
 | Polis | Agree, disagree and pass votes on participants' own statements | Opinion groups, and statements different groups agree on | 7 |
 | Community Notes | Helpfulness ratings of proposed notes | One note, shown when raters who usually disagree both rate it helpful | 7 |
+| Weighted beliefs | Each person's probability that an option is best, as pseudo-counts, weighted by expertise | A prior for an adaptive experiment | 8 |
 
 ## When participants game it
 
@@ -122,10 +132,18 @@ experts" "probably the most dangerous thing" (≈19:21). Detecting a synthetic g
 of research" (≈15:31). See [lecture 7](07-voting.md#can-it-be-gamed) and
 [whose preferences](whose-preferences.md).
 
+Lecture 8 meets the same problem with beliefs. A questioner points out that weighting people by their
+stated confidence invites gaming: "if I say I'm very confident about something, I try to skew it in one
+way" (lecture 8, ≈41:04). Williams treats it as an open research question and sketches the paper:
+compare ways of combining input and weighting schemes, and show how a scheme suffers when someone
+uses their confidence to sway the majority (≈41:04, ≈41:52).
+
 ## Related pages
 
 - [Lecture 7 — Voting (guest lecture on Polis)](07-voting.md): the full treatment, with every
   question.
+- [Lecture 8 — Guest Lecture: Joseph Jay Williams](08-guest-lecture-joseph-jay-williams.md): weighting
+  people's beliefs in an adaptive experiment.
 - [Whose preferences](whose-preferences.md): which humans are asked, synthetic participants, and
   representation.
 - [Mechanism design](mechanism-design.md): aggregation with strategic participants and payments.

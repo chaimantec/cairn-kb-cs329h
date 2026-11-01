@@ -88,7 +88,12 @@ printed slips, which slides were rendered and why) goes in
   instead. Every run so far has found paraphrases inside quote marks this way, the parent's own included.
 - **Topic pages** open with a `**Sources so far:**` line naming the lectures they draw on. Update
   it when a later lecture adds to the page, and update the coverage note in `INDEX.md` and the
-  "not yet in this KB" lecture list with it.
+  "not yet in this KB" lecture list with it. Then grep **every** page for "not yet in this" and
+  "Later lectures": a page the new lecture does not add to still asserts the old coverage, and
+  three such sentences survived several runs this way.
+- **Check "sound alone" against the textbook.** Grep the textbook's text for every term a transcript
+  header calls restored from sound alone; working from the glossary, the agent has listed terms the
+  chapters print as unprinted.
 
 ## Rebuilding
 
