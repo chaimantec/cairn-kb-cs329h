@@ -1,0 +1,48 @@
+{
+  "kbVersion": 1,
+  "course": {
+    "code": "CS329H",
+    "title": "Machine Learning from Human Preferences",
+    "instructor": "Sanmi Koyejo",
+    "term": "Autumn 2024",
+    "catalogId": "5a0cb2cc-9521-422c-aaf7-41bbac8291e8",
+    "courseUrl": "https://web.stanford.edu/class/cs329h/fall2024/"
+  },
+  "coverage": {
+    "lecturesCovered": 1,
+    "lecturesTotal": 8,
+    "transcripts": 1,
+    "wikiLecturePages": 1,
+    "wikiTopicPages": 5
+  },
+  "materials": {
+    "primary": "transcripts",
+    "slideDecks": {
+      "available": 0,
+      "transcribed": 0,
+      "note": "The course publishes no slides. The Autumn 2024 site, its slides/ path, and the Autumn 2023 and Autumn 2025 archives were checked on 2026-11-01."
+    },
+    "textbook": {
+      "url": "https://mlhp.stanford.edu/",
+      "license": "CC BY-NC 4.0",
+      "ingested": false,
+      "note": "The online textbook is a 2025-26 revision, not the text the 2024 lectures used. It is linked in sources.md and was used only to check spellings during the transcript copy-edit. No content is taken from it."
+    },
+    "method": "none",
+    "figuresAudited": false,
+    "figureAudit": {
+      "note": "false because there is no course material with figures to audit: the KB is built from transcripts alone and writes no figure descriptions."
+    }
+  },
+  "provenance": {
+    "builtBy": ["claude-opus-5-5", "claude-sonnet-5-5"],
+    "caveats": [
+      "Partial coverage: lecture 1 of 8 only. Topic pages draw on lecture 1 alone.",
+      "Transcript-only: no slides exist publicly, so several papers shown on the lecture-1 slides are described as the lecture describes them and are not named or cited.",
+      "Transcripts were copy-edited by a Sonnet subagent and checked by script (identical timestamp sequence, number inventory, per-paragraph word-count ratio). Lecture 1 has 22 passages marked [Ed: unclear].",
+      "The lecture-1 recording ends at about 1:17, as the lecturer turns to choice models; that material is not in the video."
+    ]
+  },
+  "entryPoint": "INDEX.md",
+  "updated": "2026-11-01"
+}
