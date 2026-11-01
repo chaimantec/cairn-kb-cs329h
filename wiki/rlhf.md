@@ -10,8 +10,8 @@ rather than as the whole subject. Its specific interest is the step where prefer
 equations; [lecture 2](02-preference-models.md), which supplies the choice models behind the
 comparison step and comments on language-model preference data; and three remarks in
 [lecture 3](03-model-based-preference-optimization.md), which is about classification metrics, not
-language models. Later lectures are not yet in this
-knowledge base.
+language models; and two applications in [lecture 4](04-mechanism-design.md), on pricing prompt
+completions and paying labellers. Later lectures are not yet in this knowledge base.
 
 ## Why it matters to the course
 
@@ -130,6 +130,22 @@ RLHF, as a specific statement", unlike the classification setting, where bounds 
 probability model is like pre-training, and finding the weights or threshold for the decision
 setting is like preference tuning (≈1:19:01). See [metric elicitation](metric-elicitation.md).
 
+## Remarks from the mechanism-design lecture
+
+Lecture 4 applies auction ideas to two objects from this pipeline. The first is the **prompt
+completion as a good to be priced**. Completions are sold at a fixed price today, "all fixed price, no
+options", but economic incentives could lead to variable pricing (lecture 4, ≈1:02:03). The obstacle
+is that nobody knows how good a completion is until it has been produced (≈1:01:16, ≈1:03:36). The
+mechanism Koyejo's group proposes learns to predict each user's value for a completion from pairwise
+preferences ("would you like this or this as a completion to your prompt") and thumbs up or down on
+a price. It then charges by a second-price auction on the predicted values (≈1:10:40–1:12:57). The
+preference signals RLHF collects to train a model are used here to set a price.
+
+The second is the **labelling** behind these systems. The same mechanism, run as a reverse auction,
+sets labellers' pay by the predicted harm of labelling toxic or psychologically difficult material
+(≈1:14:31–1:19:55). See [whose preferences](whose-preferences.md#the-labour-of-labelling) and
+[mechanism design](mechanism-design.md).
+
 ## Who does this work
 
 Most published work on real-world learning from human preferences comes from industry. Collecting
@@ -156,3 +172,5 @@ plans to implement RLHF-style methods, including DPO, on language models in home
 - [Lecture 2 — Preference Models](02-preference-models.md)
 - [Lecture 3 — Model-based Preference Optimization](03-model-based-preference-optimization.md)
 - [Metric elicitation](metric-elicitation.md): the classification setting lecture 3's remarks come from.
+- [Mechanism design](mechanism-design.md): pricing completions with a preference-driven auction.
+- [Lecture 4 — Mechanism Design](04-mechanism-design.md)

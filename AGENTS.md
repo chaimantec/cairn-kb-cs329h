@@ -65,7 +65,10 @@ printed slips, which slides were rendered and why) goes in
   course site text and the textbook glossary as terminology references. Check in the parent: identical
   timestamp sequence, number-inventory diff of the bodies, per-paragraph word ratio within
   0.72–1.10. The agent marks speaker turns `*Student:*` / `*Koyejo:*` and unclear passages
-  `[Ed: unclear — "…"]`.
+  `[Ed: unclear — "…"]`. Tell it that a doubled word is not always a stutter: "not not" collapsed to
+  "not" reverses a sentence, so it is marked unclear. A term restored from its sound alone, with no
+  course document printing it, is listed in the header as such, and the wiki gives the captioned
+  form beside it.
   Key the ratio check **by timestamp, not by position**, and re-run the marker diff in the parent
   rather than trusting the agent's report: a dropped paragraph shifts a positional pairing, and
   neighbouring ~45-second paragraphs are similar enough in length to pass.

@@ -9,7 +9,8 @@ infers the trade-off a decision maker is using, here from their answers about in
 the class to the papers (≈1:08:43–1:10:16), and [lecture 3](03-model-based-preference-optimization.md),
 which develops metric elicitation for binary classification and sketches inverse decision theory.
 Lecture 3 defers a third paper, linking metric elicitation to mechanism design, to a later lecture
-(lecture 3, ≈1:20:34). The *Mechanism Design* lecture is not yet in this knowledge base.
+(lecture 3, ≈1:20:34). The *Mechanism Design* lecture ([lecture 4](04-mechanism-design.md)) does not
+take it up in its recording, so that link is not covered in this knowledge base.
 
 ## The problem it addresses
 
@@ -115,7 +116,7 @@ stakeholders matter or where trade-offs are tricky and hard to specify (lecture 
 applied study with stakeholders, in which eliciting this way "seemed to better reflect their
 preferences than some other default approach" (≈1:05:47). The multiclass case is harder. The
 confusion matrix's degrees of freedom grow roughly quadratically with the number of classes
-(≈48:51). The link to mechanism design is deferred (≈1:20:34).
+(≈48:51). The link to mechanism design is deferred (≈1:20:34), and lecture 4 does not return to it.
 
 ## Inverse decision theory
 

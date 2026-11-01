@@ -4,12 +4,14 @@ Every method in this course starts by asking people something. This page collect
 says about *how* to ask: absolute ratings or comparisons, one-shot or interactive collection, how
 many questions to ask, and what to assume about the answers.
 
-**Sources so far:** [lecture 1](01-introduction.md), [lecture 2](02-preference-models.md) and
-[lecture 3](03-model-based-preference-optimization.md). Lecture 2 builds the models of human choice
-that sit on top of these queries; they have their own page,
-[discrete choice models](discrete-choice-models.md). Lecture 3 counts the queries a specific
-elicitation problem needs, and asks what kind of question people can answer. Later lectures are not
-yet in this knowledge base.
+**Sources so far:** [lecture 1](01-introduction.md), [lecture 2](02-preference-models.md),
+[lecture 3](03-model-based-preference-optimization.md) and [lecture 4](04-mechanism-design.md).
+Lecture 2 builds the models of human choice that sit on top of these queries; they have their own
+page, [discrete choice models](discrete-choice-models.md). Lecture 3 counts the queries a specific
+elicitation problem needs, and asks what kind of question people can answer. Lecture 4 asks what
+happens when the people answering are strategic, and treats prices as preferences; that material
+has its own page, [mechanism design](mechanism-design.md). Later lectures are not yet in this
+knowledge base.
 
 ## Efficient and effective elicitation
 
@@ -140,6 +142,15 @@ YouTube case, where someone tells the site they don't want a video and then keep
 and implicit signals such as whether a video was finished, which are good but need cleaning
 (≈1:13:03, ≈1:15:20).
 
+**Prices as revealed preferences.** Lecture 4 grounds preferences as the prices people are willing
+to pay (≈11:40). A sale at a posted price is a revealed preference with little resolution. If
+someone buys, "their value must be higher than your stated price", so "you don't learn that much
+about individual preferences, but you learn at least some directional signal" (lecture 4, ≈17:51).
+An auction might reveal more, since bids should be correlated with values, but only if bidders have
+no reason to shade them (≈18:36). Lecture 4 also lists learning "with various kinds of revealed
+preferences" under pricing, observing buyers' actions over iterations to predict their future
+behaviour, among the questions where learning meets mechanisms (≈58:53).
+
 ## Noise, inconsistency and rationality
 
 Human answers are not clean. A student notes that people "don't agree with themselves 25% of the
@@ -158,6 +169,18 @@ The course raises several questions about the human side (≈18:26, ≈19:12):
 
 It also asks what happens when the people answering are **strategic agents** who may try to game the
 system (≈19:57), and what to do about truthfulness and strategic behaviour (≈1:14:55).
+
+Lecture 4 takes this up through **mechanism design**: setting the rules of the interaction so that
+answering truthfully is each participant's best strategy, the property called **incentive
+compatibility**. Koyejo reads it as an elicitation property as well as an economic one, since "the
+true value you can think of as the target that you might be interested in in this elicitation
+mechanism" (lecture 4, ≈29:29). In a second-price auction, bidding your true value is optimal
+(≈31:00–36:30). In a pay-your-bid auction it is not: students immediately proposed bidding "the
+minimum amount you have to" (≈19:21). Lecture 4's closing applications predict each person's value
+from cheap signals, pairwise comparisons between completions and thumbs up or down on a stated
+price, which it calls "low-signal responses to various kinds of simple pairwise-type queries". The
+mechanism is then run on the predicted values (≈1:10:40, ≈1:11:25). See
+[mechanism design](mechanism-design.md).
 
 Lecture 2 says what "rational" means in its models: **transitivity**. Preferences are assumed
 "effectively linearly orderable", so a cycle (a over b, b over c, c over a) cannot occur "outside of
@@ -192,3 +215,5 @@ which lecture 2 develops; see [discrete choice models](discrete-choice-models.md
 - [Lecture 2 — Preference Models](02-preference-models.md)
 - [Lecture 3 — Model-based Preference Optimization](03-model-based-preference-optimization.md)
 - [Metric elicitation](metric-elicitation.md): a worked case where the number of queries is known.
+- [Mechanism design](mechanism-design.md): eliciting values from strategic participants.
+- [Lecture 4 — Mechanism Design](04-mechanism-design.md)

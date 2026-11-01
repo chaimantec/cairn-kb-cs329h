@@ -7,8 +7,10 @@ away" from it (≈19:57, ≈21:29).
 
 **Sources so far:** [lecture 1](01-introduction.md), [lecture 2](02-preference-models.md) on
 modelling individuals separately or together, and
-[lecture 3](03-model-based-preference-optimization.md) on fairness measures that disagree. The catalog has a later lecture titled *Ethics* and one
-titled *Voting*. Neither is yet in this knowledge base.
+[lecture 3](03-model-based-preference-optimization.md) on fairness measures that disagree, and
+[lecture 4](04-mechanism-design.md) on who decides what outcome a mechanism aims for and on paying
+labellers by harm. The catalog has a later lecture titled *Ethics* and one titled *Voting*. Neither
+is yet in this knowledge base.
 
 ## Choosing the humans
 
@@ -20,6 +22,15 @@ The problem changes with scale. Getting one person's preference differs from get
 when the class will not agree even on the size of project groups. That raises the questions of how to
 **aggregate** preferences in ways that reflect broader values, and of what happens when participants
 are **strategic** and try to game the system (≈19:57).
+
+Lecture 4 treats strategic participants through [mechanism design](mechanism-design.md), and it
+makes a point that applies to aggregation generally: the person designing the mechanism chooses the
+goal. When a student asks whether charging a buyer the most they will pay is a good social outcome,
+Koyejo answers that "it's up to the designer to decide what a socially valuable outcome is"
+(lecture 4, ≈9:24). Many framings use maximal revenue; welfare is an alternative, and a designer
+could build for some other notion of social good (≈9:24–10:55). He notes that there are
+philosophical arguments for "capitalist-style revenue maximization" without endorsing or going into
+them (≈10:55, ≈11:40).
 
 **Representative sampling.** A student asks whether the course will cover sampling humans across
 groups, as one samples data across scenarios, so that the preferences represent all groups (≈21:29,
@@ -72,6 +83,21 @@ little (≈1:02:35).
 Paying annotators is also part of why academic preference data is scarce: "you want to pay the people
 that are giving you signals or preferences" (≈44:50). See [RLHF](rlhf.md#who-does-this-work).
 
+**Paying by harm.** Lecture 4 presents one proposal from Koyejo's group for the problem lecture 1
+calls open. Labelling "potentially toxic or psychologically difficult material, both text and image
+completions" is part of building modern generative systems (lecture 4, ≈1:15:17). If individual harm
+can be connected to an economic value, labellers could be paid according to how much a task is
+likely to harm them. A more sensitive item, or a more sensitive person, would be paid much more
+(≈1:15:17, ≈1:16:03). One argument for this is fairness: "your payment should be correlated with how
+much harm you might be suffering from engaging in that task" (≈1:16:49). Because people asked
+directly would have "some incentive to be strategic" (≈1:17:36), the pay is set by a **reverse auction** run on harm
+predicted from pairwise feedback (≈1:17:36–1:19:09). The audio reports that it needs much less
+information than the baselines and has lower regret than a uniform allocation (≈1:19:09, ≈1:19:55).
+Koyejo hedges it three times. It is "not a perfect solution", "not a normative claim that this is
+necessarily a good idea", and one lever among several for making the labelling ecosystem "less
+psychologically damaging" (≈1:15:17, ≈1:16:03, ≈1:16:49). See
+[lecture 4](04-mechanism-design.md#paying-labellers-by-harm-a-reverse-auction).
+
 ## Disagreement as a reason to elicit
 
 Disagreement is also a reason to use preferences in the first place. For targets such as healthfulness
@@ -104,3 +130,5 @@ the tool helps each stakeholder find theirs (≈33:08).
 - [Lecture 1 — Introduction](01-introduction.md)
 - [Lecture 2 — Preference Models](02-preference-models.md)
 - [Lecture 3 — Model-based Preference Optimization](03-model-based-preference-optimization.md)
+- [Lecture 4 — Mechanism Design](04-mechanism-design.md)
+- [Mechanism design](mechanism-design.md): strategic participants, and who chooses the objective.
