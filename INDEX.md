@@ -6,15 +6,22 @@ preferences from people efficiently and effectively, and how to build them into 
 website names three threads: inverse reinforcement learning, metric elicitation, and reinforcement
 learning from human feedback. It mixes lectures, invited speakers and student-led paper discussions,
 with homework (60%) and a group project (40%). Lecture 6 is a guest lecture by the philosopher Daniel
-Frederick Webber.
+Frederick Webber, and lecture 7 one by Colin Megill of Polis, an open source platform for mapping
+public opinion.
 
-> **Coverage: lectures 1–6 of 8.** This knowledge base covers **lecture 1 (Introduction)**,
+> **Coverage: lectures 1–7 of 8.** This knowledge base covers **lecture 1 (Introduction)**,
 > **lecture 2 (Preference Models)**, **lecture 3 (Model-based Preference Optimization, on metric
 > elicitation)**, **lecture 4 (Mechanism Design)**, **lecture 5 (Human-centered Design)** and
-> **lecture 6 (Ethics, a guest lecture on value alignment)** of the eight catalog lectures. Questions
-> about the later lectures (voting, and the guest lecture by Joseph Jay Williams) **cannot be answered
-> from this KB yet**. Say so rather than answering from the lecture 1 overview, which only
-> previews them. Some sessions on the schedule are not in the catalog at all. Lecture 2 defers the
+> **lecture 6 (Ethics, a guest lecture on value alignment)** and **lecture 7 (Voting, a guest lecture
+> on Polis and Community Notes)** of the eight catalog lectures. Questions about the guest lecture by
+> Joseph Jay Williams (lecture 8) **cannot be answered from this KB yet**. Say so rather than
+> answering from the lecture 1 overview, which only previews it.
+>
+> **No voting lecture.** Despite its catalog title, lecture 7 is not the course's lecture on voting.
+> The course's voting and social-choice lectures (lecture 4 refers back to them) are not in the
+> catalog, so this KB has **no account of voting rules or social choice theory as the course taught
+> them**. Say so when asked; [preference aggregation](wiki/preference-aggregation.md) collects what
+> the other lectures say. Some sessions on the schedule are not in the catalog at all. Lecture 2 defers the
 > ideal point model to one of them, and lecture 3 builds on an active-learning lecture (Oct 14)
 > that is not in the catalog either. Lecture 4 follows bandit and Bayesian-optimization sessions
 > (Oct 21 and 23) that are not in the catalog.
@@ -30,7 +37,8 @@ Frederick Webber.
 > Sep 25 "Individual Preference Models" lecture; lecture 3 is the Oct 16 "Model-based Preferences
 > Optimization via Preference Elicitation" lecture; lecture 4 is the Oct 28 "Aggregated Preference
 > Optimization via Mechanism Design" lecture; lecture 5 is the Nov 11 "Human-centered Design" lecture;
-> lecture 6, titled *Ethics* in the catalog, is the Nov 18 guest lecture by Daniel Frederick Webber.
+> lecture 6, titled *Ethics* in the catalog, is the Nov 18 guest lecture by Daniel Frederick Webber;
+> lecture 7, titled *Voting* in the catalog, is the Dec 2 guest lecture by Colin Megill (Polis).
 > Each page gives the evidence.
 
 ## Lectures
@@ -103,12 +111,33 @@ Frederick Webber.
   sums, maximin and the transmitter-room case, deontology) and common-sense morality; refusing to act
   as a choice; power seeking; and the one-page ESR (Ethics and Society Review) statement the final
   project requires. Includes a table of every student question.
+- [Lecture 7 — Voting (guest lecture: Polis and Community Notes)](wiki/07-voting.md): Colin Megill,
+  who has run the open source platform Polis for about 13 years. Despite the catalog title, not a
+  lecture on voting rules. Covers how Polis works (participants write statements, others agree,
+  disagree or pass; a sparse vote matrix; PCA and K-means to find opinion groups; statements common to
+  people who think differently), a county land-bank conversation as a worked example, whether it can
+  be gamed (the Uber case in Taiwan, bots, synthetic citizens and experts, identity and the sample),
+  the paper with Anthropic on language models in Polis (grounded summarization, topic modelling,
+  "scarily good" vote prediction and its risks), deployments, LLM-written group statements (a DeepMind
+  paper), OpenAI's grant program and Anthropic's constitution experiment on human values, how
+  Community Notes adapted the idea (matrix factorization, notes shown when raters who usually
+  disagree both find them helpful, "a collective response system"), open problems (new clustering,
+  vote prediction), and a student's challenge to calling Polis "emergent". Includes a table of every
+  question.
 
-Catalog lectures not yet in this KB: 7 Voting · 8 Guest Lecture: Joseph Jay Williams.
+Catalog lectures not yet in this KB: 8 Guest Lecture: Joseph Jay Williams.
 
 ## Topics
 
 Each topic page gathers one concept across lectures, and says at the top which lectures it draws on.
+
+- [Preference aggregation: groups, voting and consensus](wiki/preference-aggregation.md): what the
+  lectures say about combining many people's preferences, and the warning that the course's own
+  voting and social-choice lectures are not in this KB. Covers aggregation as a change of scale
+  (lecture 1), one shared utility or many (lecture 2), the passing references to social choice in
+  lectures 4 and 5, lecture 6's moral theories as rules for weighing people (sums, weighted sums,
+  maximin), Polis and Community Notes as consensus across difference (lecture 7), a table comparing
+  the approaches, and gaming. Lectures 1, 2 and 4–7 (lecture 7 is the main source).
 
 - [Discrete choice models: utility, noise and the logit family](wiki/discrete-choice-models.md): the
   model (utility = deterministic part + noise), identification only up to ordering, a table mapping
@@ -135,7 +164,8 @@ Each topic page gathers one concept across lectures, and says at the top which l
   prices as revealed preferences, strategic answerers and incentive compatibility (lecture 4);
   queries as tools for enabling a human–AI interaction, and human preference as an evaluation
   signal (lecture 5); what preference signals can and cannot stand in for, and A-versus-B against
-  typed feedback (lecture 6). Lectures 1–6.
+  typed feedback (lecture 6); participants writing the statements others vote on, vote prediction,
+  and elicitation at scale (lecture 7). Lectures 1–7.
 - [Mechanism design: auctions, incentives and truthful elicitation](wiki/mechanism-design.md): the
   vocabulary (types, allocation, payments, revenue, utility), incentive compatibility at three levels
   of information and individual rationality, a table comparing posted prices, first- and
@@ -151,8 +181,9 @@ Each topic page gathers one concept across lectures, and says at the top which l
 - [Value alignment: intentions, preferences, interests and morality](wiki/value-alignment.md): what
   "what we really want" can mean, with a table of the four readings, the problem each brings and where
   the course's preference methods fit; the paperclip AI; paternalism, autonomy and defaults; aligning
-  to a moral theory or to common-sense morality; power seeking; and why the goal comes before the
-  method. Lectures 1, 5 and 6 (lecture 6 is the main source).
+  to a moral theory or to common-sense morality; power seeking; why the goal comes before the
+  method; and OpenAI's and Anthropic's projects to gather values from the public (lecture 7).
+  Lectures 1, 5, 6 and 7 (lecture 6 is the main source).
 - [Reward hacking](wiki/reward-hacking.md): the boat game-playing agent, length and bullet-point bias in
   chatbots, over-optimizing against a learned reward model, and the paperclip AI as a specification
   failure, the "same difficulty" as manually specifying a reward function (lecture 6). Lectures 1
@@ -172,7 +203,8 @@ Each topic page gathers one concept across lectures, and says at the top which l
   goal, and paying labellers by harm (lecture 4); designing for some people and leaving others out,
   fairness, accountability (the asylum-translation example), and stakeholder groups as evaluators
   (lecture 5); people other than the user, paternalism and defaults, and the ESR statement's
-  questions about whose interests a project represents (lecture 6). Lectures 1–6.
+  questions about whose interests a project represents (lecture 6); who is in the sample, synthetic
+  participants, and replacing people with models (lecture 7). Lectures 1–7.
 
 ## Raw materials
 

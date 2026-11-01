@@ -15,7 +15,9 @@ leaving others out, fairness, accountability, and stakeholder groups in evaluati
 paternalism, and the ESR statement's questions about whose interests a project represents. Lecture 5
 defers accountability, fairness, transparency and ethics to "a separate lecture" (≈57:58). Lecture 6
 takes up ethics as value alignment and does not return to accountability, fairness or transparency.
-The catalog lecture titled *Voting* is not yet in this knowledge base.
+[Lecture 7](07-voting.md), a guest lecture on Polis that the catalog titles *Voting*, adds who is
+in the sample, synthetic participants, and the risk of replacing people with models. Combining many
+people's preferences has its own page, [preference aggregation](preference-aggregation.md).
 
 ## Choosing the humans
 
@@ -178,8 +180,30 @@ and "who might benefit or be harmed by the success of it" (≈1:09:36, ≈1:10:2
 mitigation for a tool for users with low vision is "a series of co-design workshops with stakeholders"
 (≈1:09:36). See [lecture 6](06-ethics.md#the-esr-statement-for-the-final-project).
 
+## Who is in the sample, and whether they are people
+
+Lecture 7, a guest lecture by Colin Megill on the opinion-mapping platform Polis, adds two problems.
+The first is the sample. Polis "is a tool that can be used with any sample and we're intentionally
+agnostic about it", so who takes part is left to whoever runs a conversation (lecture 7, ≈13:59).
+Deployments range from an open national conversation in Taiwan to a survey that stopped "every nth
+person" from a vehicle (≈11:40, ≈33:14). Once bots can vote, gaming the system "just gets to
+identity", and the question becomes "what is the sample and how do we know?" (≈13:12). Megill looks
+to "anonymous but verified identity" as the likely answer (≈13:59).
+
+The second is that people can be simulated. A language model was "quite scarily good at predicting
+people's votes" (≈27:04). That makes "synthetic voters" possible (≈27:50), and he calls "synthetic
+experts" "probably the most dangerous thing": a warning from 200 economists matters only if the
+economists are real (≈19:21, ≈20:08). It also tempts institutions "to lazily replace people in social
+research and further intermediate the public from institutions" (≈27:50). A system prompt like
+"pretend you're a citizen of Romania" produces stereotypes, and the danger is that "people believe
+that it's that good" (≈29:25, ≈30:10). See [preference aggregation](preference-aggregation.md) for
+how Polis combines the people it does have.
+
 ## Related pages
 
+- [Preference aggregation](preference-aggregation.md): combining many people's preferences, and what
+  the course says about voting and social choice.
+- [Lecture 7 — Voting (guest lecture on Polis)](07-voting.md)
 - [Value alignment](value-alignment.md): intentions, preferences, interests and morality as targets.
 - [Lecture 6 — Ethics](06-ethics.md)
 - [Asking humans for preferences](preference-queries.md): rationality, noise and strategic behaviour.

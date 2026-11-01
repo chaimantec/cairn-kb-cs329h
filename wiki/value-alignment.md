@@ -13,7 +13,9 @@ philosopher Daniel Frederick Webber. [Lecture 1](01-introduction.md) names "huma
 alignment" as the course's last module, and [lecture 5](05-human-centered-design.md) defers the
 question of matching AI decision-making to human values to a later lecture. Webber says at the outset
 that "we're not going to solve any deep problems about value in the next hour", and offers "a lay of
-the land" rather than a verdict (lecture 6, ≈2:22).
+the land" rather than a verdict (lecture 6, ≈2:22). [Lecture 7](07-voting.md), a guest lecture
+on Polis, describes OpenAI's and Anthropic's projects to gather human values for language models
+from the public.
 
 ## Where it sits in the course
 
@@ -127,8 +129,25 @@ techniques (≈30:56). The course's preference-learning methods address the seco
 be one throughout, or it may be that "from case to case it makes more sense to focus on one rather
 than the other" (≈33:14).
 
+## Gathering values from the public
+
+Lecture 7, a guest lecture by Colin Megill of Polis, describes two attempts by AI companies to gather
+human values from outside the company. OpenAI ran "a million dollar grant program" on mapping human
+values "to have that be an input to completions" (lecture 7, ≈41:44, ≈42:31). Megill's toy example is
+that very gory completions might suit "a horror author" and not "a grade schooler" (≈42:31). "This
+kind of stuff in alignment has to do with human values. And cynically, moving risk away from the
+organization into some legitimate third party system would be desirable if it was possible" (≈42:31,
+≈43:17). Anthropic used Polis with "a random sample" to look at Claude's constitution, and "it did turn
+out that everybody was interested in everything. There wasn't a lot of disagreement" (≈44:50).
+Lecture 7 does not say which reading of "what we really want" either project aims at. See
+[lecture 7](07-voting.md#human-values-for-language-models-openai-and-anthropic).
+
 ## Related pages
 
+- [Lecture 7 — Voting (guest lecture on Polis)](07-voting.md): OpenAI's and Anthropic's projects to
+  gather values from the public.
+- [Preference aggregation](preference-aggregation.md): lecture 6's moral theories as rules for
+  weighing people against each other.
 - [Lecture 6 — Ethics](06-ethics.md): the full treatment, with every student question.
 - [Whose preferences](whose-preferences.md): choosing which humans, aggregation, labour, fairness,
   and people other than the user.

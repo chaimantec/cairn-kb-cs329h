@@ -11,9 +11,12 @@ preferences can be expressed as prices, such a mechanism is also a way to **elic
 earlier pointers. [Lecture 1](01-introduction.md) lists strategic participants and truthfulness among
 the course's open questions (≈19:57, ≈1:14:55). [Lecture 3](03-model-based-preference-optimization.md)
 planned a paper tying metric elicitation to mechanism design and deferred it (≈0:05, ≈1:15:55); the
-lecture 4 recording does not take it up. The catalog's *Voting* lecture (7) and the guest lecture by
+lecture 4 recording does not take it up. The catalog's *Voting* lecture ([lecture 7](07-voting.md)) is a guest
+lecture on Polis, not the course's social-choice lecture. How Polis copes with participants who game
+it, without prices or payments, is summarized in
+[preference aggregation](preference-aggregation.md#when-participants-game-it). The guest lecture by
 Joseph Jay Williams (8), which lecture 4 says uses related ideas for A/B testing and online learning
-(≈1:20:40), are not yet in this knowledge base.
+(≈1:20:40), is not yet in this knowledge base.
 
 ## Why a preference course studies auctions
 

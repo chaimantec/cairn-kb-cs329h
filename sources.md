@@ -7,8 +7,8 @@ directly.
 
 **The course publishes no slide decks.** The Autumn 2024 site, its `slides/` path,
 and the Autumn 2023 and Autumn 2025 archives were all checked on 2026-11-01, and checked
-again before lectures 2, 3, 4, 5 and 6 were added; none links a lecture deck. The course root now
-carries an Autumn 2026 offering, checked before lecture 6 was added; it links no deck either. This knowledge base is therefore built from the lecture
+again before lectures 2, 3, 4, 5, 6 and 7 were added; none links a lecture deck. The course root now
+carries an Autumn 2026 offering, checked before lectures 6 and 7 were added; it links no deck either. This knowledge base is therefore built from the lecture
 transcripts, and the wiki cites transcript timestamps rather than slide numbers.
 
 ## Course website
@@ -60,3 +60,4 @@ and expect its framing to differ from the lectures in places.
 | 4 Mechanism Design | <https://www.youtube.com/watch?v=zkHTbb-0Gns> |
 | 5 Human-centered Design | <https://www.youtube.com/watch?v=VffFArrRSBE> |
 | 6 Ethics (guest lecture, Daniel Frederick Webber) | <https://www.youtube.com/watch?v=-kdR_7dCcyI> |
+| 7 Voting (guest lecture, Colin Megill, Polis) | <https://www.youtube.com/watch?v=1QpNZXL35NM> |

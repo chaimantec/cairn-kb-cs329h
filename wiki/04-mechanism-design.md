@@ -30,8 +30,10 @@ the catalog.
 The lecture also refers back to "the voting lectures" and to incentive compatibility as something
 "we covered in social choice briefly" (≈0:05, ≈28:42). So a social-choice lecture came before this
 one. The schedule's candidate is Oct 7, "Aggregated Preference Models via Social Choice Theory &
-Game Theory". The catalog's lecture 7 is titled *Voting* and is not yet in this knowledge base, so
-which session it records is not settled here.
+Game Theory". The catalog's lecture 7, titled *Voting*, turned out to be the Dec 2 guest lecture
+by Colin Megill on Polis ([lecture 7](07-voting.md)), so the voting lectures are not in the catalog.
+See [preference aggregation](preference-aggregation.md) for what the remaining lectures say about
+social choice.
 
 **No slides.** The lecture is given from slides, which the course has not published, so every claim
 here is cited to the transcript by timestamp. The slides carry references that are not read out:

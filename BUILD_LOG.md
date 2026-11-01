@@ -23,6 +23,7 @@ every build follows, and each lesson in general form, are in
 | 4 Mechanism Design | Run 4 |
 | 5 Human-centered Design | Run 5 |
 | 6 Ethics (guest lecture, Webber) | Run 6 |
+| 7 Voting (guest lecture, Megill) | Run 7 |
 
 ## Runs
 

@@ -6,7 +6,7 @@ many questions to ask, and what to assume about the answers.
 
 **Sources so far:** [lecture 1](01-introduction.md), [lecture 2](02-preference-models.md),
 [lecture 3](03-model-based-preference-optimization.md), [lecture 4](04-mechanism-design.md),
-[lecture 5](05-human-centered-design.md) and [lecture 6](06-ethics.md).
+[lecture 5](05-human-centered-design.md), [lecture 6](06-ethics.md) and [lecture 7](07-voting.md).
 Lecture 2 builds the models of human choice that sit on top of these queries; they have their own
 page, [discrete choice models](discrete-choice-models.md). Lecture 3 counts the queries a specific
 elicitation problem needs, and asks what kind of question people can answer. Lecture 4 asks what
@@ -15,7 +15,10 @@ has its own page, [mechanism design](mechanism-design.md). Lecture 5 places thes
 larger design process and treats human preference as one way to evaluate a system; that material has
 its own page, [human–AI interaction](human-ai-interaction.md). Lecture 6 asks what a preference
 signal can and cannot tell you about what a person really wants; that material has its own page,
-[value alignment](value-alignment.md). Later lectures are not yet in this knowledge base.
+[value alignment](value-alignment.md). Lecture 7, a guest lecture on Polis, adds a query format in
+which participants write the statements that others vote on, and the prediction of a person's votes
+from their history. The guest lecture by Joseph Jay Williams (catalog lecture 8) is not yet in this
+knowledge base.
 
 ## Efficient and effective elicitation
 
@@ -253,8 +256,32 @@ is an assumption", and at least one invited talk will challenge it (lecture 1, �
 The technical core is **discrete choice** and the **parametric models** built around it (≈1:15:40),
 which lecture 2 develops; see [discrete choice models](discrete-choice-models.md).
 
+## Statements and votes: letting participants write the questions
+
+Lecture 7's Polis turns the usual query around. Instead of the designer choosing items to rate or
+compare, participants "submit statements and those statements are shown randomly one at a time to
+other users", who "agree, disagree or pass" (lecture 7, ≈3:57). The result is "an emergent survey",
+"a survey created by the people taking it" (≈3:57, ≈4:44). The data form a sparse matrix with one row
+per participant and one column per statement, coded 1 for agree, −1 for disagree, 0 for pass, and
+null for a statement the participant never saw (≈7:02). The system is "greedy. It'll take any amount
+of voting that people do" (≈3:57). A student later challenges how emergent this is, since a fixed
+algorithm decides the groups. Megill agrees that the statements are emergent, while the clusters are
+"a function of the voting data" (≈1:02:34, ≈1:03:21).
+
+Two more points from the lecture bear on asking. **Votes can be predicted.** Given more of a
+participant's votes in context, a language model "gets better at predicting what the next vote would
+be", and was "quite scarily good" at it (≈27:04, ≈28:36). Megill treats that as a risk as much as a
+tool. Polis "doesn't do any vote prediction", and he names it as an open problem (≈1:00:14,
+≈1:01:48). **The way of asking depends on scale.** "The elicitation mode does matter based on the
+scale": interactions at 10 or 100 people differ from those at 10,000 (≈1:11:50). He also expects
+"agent elicitation", in which a model follows up with people "to get the next stage of level of
+detail after they submit a statement" (≈44:04). See [lecture 7](07-voting.md) and
+[preference aggregation](preference-aggregation.md).
+
 ## Related pages
 
+- [Preference aggregation](preference-aggregation.md): how votes from many people are combined.
+- [Lecture 7 — Voting (guest lecture on Polis)](07-voting.md)
 - [Whose preferences](whose-preferences.md): who gets asked, and what that does to the model.
 - [Reward hacking](reward-hacking.md): what goes wrong when a model optimizes against learned
   preferences.

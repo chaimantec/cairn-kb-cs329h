@@ -60,7 +60,8 @@ printed slips, which slides were rendered and why) goes in
   2024 text. It may be used to check spellings during a transcript edit; take no content from it.
 - **Numbering is by catalog position**, which does not follow the site schedule (the catalog puts
   the Oct 30 guest lecture last). Map each lecture to its schedule date from its transcript content,
-  and state the mapping on its page.
+  and state the mapping on its page. A catalog title can name a guest talk's theme rather than a
+  schedule session, so a title that matches a schedule row is not evidence that it is that row.
 - **Transcript edit.** Delegate the copy-edit to a Sonnet subagent with the verbatim captions, the
   course site text and the textbook glossary as terminology references. Check in the parent: identical
   timestamp sequence, number-inventory diff of the bodies, per-paragraph word ratio within
@@ -75,6 +76,12 @@ printed slips, which slides were rendered and why) goes in
   Read every ratio outlier against its own original paragraph **and the neighbouring ones**. A
   sentence moved across a marker raises one paragraph and lowers its neighbour, often only the first
   out of band, and the agent's explanation of an outlier is a claim to check, not evidence.
+  For a filler-heavy speaker the low side of the band floods. Recompute the ratio with "um"/"uh"
+  removed from the original, and diff every low paragraph word by word for deleted spans that are
+  neither filler nor a repeat of the neighbouring words. That diff, not the ratio, is what finds a
+  dropped word or a word whose meaning changed (a common noun capitalised into a product name).
+  In a guest lecture the instructor speaks from the audience and the agent infers which turns are
+  his; the wiki names him only where that is secure (named, or speaking as host), else "a questioner".
 - **Quote sweep.** Check every quoted span on the pages a run writes against the edited transcripts
   by script, with markers, speaker tags and `[Ed:]` marks stripped. The expected non-matches are site
   text, such as schedule titles, and captioned forms, which are checked against the verbatim captions
