@@ -146,3 +146,5 @@ Lecture 5 organizes evaluation by four questions: how, what, who and when (≈1:
   stakeholder is the hard part.
 - [Lecture 1 — Introduction](01-introduction.md) and
   [Lecture 3 — Model-based Preference Optimization](03-model-based-preference-optimization.md).
+- [Value alignment](value-alignment.md): lecture 6 on what "what the user really wants" can mean, and
+  paternalism in personalized products.

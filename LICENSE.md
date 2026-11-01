@@ -37,7 +37,8 @@ but do not treat it as freely relicensable text.
 
 ## Layer 2 — the course
 
-The lectures are © Stanford University and the lecturers (Sanmi Koyejo and course staff), recorded
+The lectures are © Stanford University and the lecturers (Sanmi Koyejo, course staff, and the guest
+lecturer of lecture 6, Daniel Frederick Webber), recorded
 and published by Stanford on YouTube. The verbatim captions in `raw/transcripts/original/` are
 YouTube's automatic captions of those recordings. They are reproduced here for study, with each
 lecture's video linked from its transcript header and from [`sources.md`](sources.md).

@@ -7,7 +7,8 @@ directly.
 
 **The course publishes no slide decks.** The Autumn 2024 site, its `slides/` path,
 and the Autumn 2023 and Autumn 2025 archives were all checked on 2026-11-01, and checked
-again before lectures 2, 3, 4 and 5 were added; none links a lecture deck. This knowledge base is therefore built from the lecture
+again before lectures 2, 3, 4, 5 and 6 were added; none links a lecture deck. The course root now
+carries an Autumn 2026 offering, checked before lecture 6 was added; it links no deck either. This knowledge base is therefore built from the lecture
 transcripts, and the wiki cites transcript timestamps rather than slide numbers.
 
 ## Course website
@@ -19,6 +20,7 @@ transcripts, and the wiki cites transcript timestamps rather than slide numbers.
 | Ed discussion forum (enrolled students only) | <https://edstem.org/us/courses/48383/discussion/> | not fetched |
 | Other offerings: Autumn 2023 | <https://web.stanford.edu/class/cs329h/fall2023/> | 2026-11-01 |
 | Other offerings: Autumn 2025 | <https://web.stanford.edu/class/cs329h/fall2025/> | 2026-11-01 |
+| Other offerings: Autumn 2026 (the course root, now the current offering) | <https://web.stanford.edu/class/cs329h/> | 2026-11-01 |
 
 The crawler (`crawl_course_site.py`, 2 pages) found no downloadable course
 documents on the 2024 site: every document it links is off-site.
@@ -57,3 +59,4 @@ and expect its framing to differ from the lectures in places.
 | 3 Model-based Preference Optimization | <https://www.youtube.com/watch?v=7i6WsIzZaeo> |
 | 4 Mechanism Design | <https://www.youtube.com/watch?v=zkHTbb-0Gns> |
 | 5 Human-centered Design | <https://www.youtube.com/watch?v=VffFArrRSBE> |
+| 6 Ethics (guest lecture, Daniel Frederick Webber) | <https://www.youtube.com/watch?v=-kdR_7dCcyI> |

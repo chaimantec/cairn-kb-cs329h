@@ -64,7 +64,9 @@ than the one this lecture refers to; see [sources](../sources.md).
 3. model-free optimization;
 4. human values and AI alignment.
 
-Invited lectures follow the modules, the first in early October (≈3:11). The schedule on the
+Invited lectures follow the modules, the first in early October (≈3:11). For the alignment module,
+see [lecture 6](06-ethics.md), a guest lecture on value alignment, and the
+[value alignment](value-alignment.md) topic page. The schedule on the
 course website groups the term a little differently, under three themes: *Preference Models*,
 *Preference Measurement & Optimization*, and *Value, Alignment, & Human-centered Design*.
 

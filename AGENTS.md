@@ -50,7 +50,7 @@ printed slips, which slides were rendered and why) goes in
 
 ## This course
 
-- **No slides exist publicly** (Autumn 2023/2024/2025 sites and `slides/` paths checked). The KB is
+- **No slides exist publicly** (Autumn 2023/2024/2025 sites, the course root, which now carries Autumn 2026, and `slides/` paths checked). The KB is
   transcript-only: `kb.json` `materials.method` is `none`. Cite transcript timestamps as `(≈MM:SS)`.
   Before declaring a later lecture deck-less, re-check the site — a deck may have been posted since.
 - **Unnamed papers.** The lectures show papers on slides without naming them aloud. Describe them as
@@ -64,7 +64,7 @@ printed slips, which slides were rendered and why) goes in
 - **Transcript edit.** Delegate the copy-edit to a Sonnet subagent with the verbatim captions, the
   course site text and the textbook glossary as terminology references. Check in the parent: identical
   timestamp sequence, number-inventory diff of the bodies, per-paragraph word ratio within
-  0.72–1.10. The agent marks speaker turns `*Student:*` / `*Koyejo:*` and unclear passages
+  0.72–1.10. The agent marks speaker turns `*Student:*` / `*Koyejo:*` (a guest lecturer by surname, spelled as the site prints it) and unclear passages
   `[Ed: unclear — "…"]`. Tell it that a doubled word is not always a stutter: "not not" collapsed to
   "not" reverses a sentence, so it is marked unclear. A term restored from its sound alone, with no
   course document printing it, is listed in the header as such, and the wiki gives the captioned

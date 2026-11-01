@@ -3,24 +3,24 @@
   "course": {
     "code": "CS329H",
     "title": "Machine Learning from Human Preferences",
-    "instructor": "Sanmi Koyejo",
+    "instructor": "Sanmi Koyejo; lecture 6 is a guest lecture by Daniel Frederick Webber",
     "term": "Autumn 2024",
     "catalogId": "5a0cb2cc-9521-422c-aaf7-41bbac8291e8",
     "courseUrl": "https://web.stanford.edu/class/cs329h/fall2024/"
   },
   "coverage": {
-    "lecturesCovered": 5,
+    "lecturesCovered": 6,
     "lecturesTotal": 8,
-    "transcripts": 5,
-    "wikiLecturePages": 5,
-    "wikiTopicPages": 8
+    "transcripts": 6,
+    "wikiLecturePages": 6,
+    "wikiTopicPages": 9
   },
   "materials": {
     "primary": "transcripts",
     "slideDecks": {
       "available": 0,
       "transcribed": 0,
-      "note": "The course publishes no slides. The Autumn 2024 site, its slides/ path, and the Autumn 2023 and Autumn 2025 archives were checked on 2026-11-01, and again before lectures 2, 3, 4 and 5 were added."
+      "note": "The course publishes no slides. The Autumn 2024 site, its slides/ path, and the Autumn 2023 and Autumn 2025 archives were checked on 2026-11-01, and again before lectures 2, 3, 4, 5 and 6 were added. Before lecture 6 the course root, which now carries an Autumn 2026 offering, was checked too; it links no deck."
     },
     "textbook": {
       "url": "https://mlhp.stanford.edu/",
@@ -40,16 +40,17 @@
       "claude-sonnet-5-5"
     ],
     "caveats": [
-      "Partial coverage: lectures 1-5 of 8. Topic pages draw on lectures 1-5 only; the discrete-choice-models page on lectures 1-2, the mechanism-design page mainly on lecture 4, the human-ai-interaction page mainly on lecture 5.",
+      "Partial coverage: lectures 1-6 of 8. Topic pages draw on lectures 1-6 only; the discrete-choice-models page on lectures 1-2, the mechanism-design page mainly on lecture 4, the human-ai-interaction page mainly on lecture 5, the value-alignment page mainly on lecture 6.",
       "Transcript-only: no slides exist publicly, so papers and references shown on the slides are described as the lectures describe them and are not named or cited. Formulas on the wiki pages are rebuilt from what the lecturer says aloud, not read off slides.",
-      "Transcripts were copy-edited by a Sonnet subagent and checked by script in the parent (identical timestamp sequence, number inventory, per-paragraph word-count ratio keyed by timestamp). Lecture 1 has 22 passages marked [Ed: unclear], lecture 2 has 21, lecture 3 has 33, lecture 4 has 37, lecture 5 has 29. One lecture-2 paragraph (1:11:28) dropped by the agent was restored in the parent; in lecture 3 a student sentence the agent had moved from 3:54 into 3:07 was moved back.",
+      "Transcripts were copy-edited by a Sonnet subagent and checked by script in the parent (identical timestamp sequence, number inventory, per-paragraph word-count ratio keyed by timestamp). Lecture 1 has 22 passages marked [Ed: unclear], lecture 2 has 21, lecture 3 has 33, lecture 4 has 37, lecture 5 has 29, lecture 6 has 4. One lecture-2 paragraph (1:11:28) dropped by the agent was restored in the parent; in lecture 3 a student sentence the agent had moved from 3:54 into 3:07 was moved back.",
       "The lecture-1 recording ends at about 1:17, as the lecturer turns to choice models; that material is not in the video.",
       "Lecture 2 defers the ideal point model to the next lecture and skips its planned exercises; neither is in the lecture 2 recording, and the schedule's next individual-preference-models lecture (Sep 30) is not in the catalog.",
       "Lecture 3 builds on an active-learning lecture (Oct 14 on the schedule) that is not in the catalog. It covers the first of three planned papers in full, sketches the second (inverse decision theory) and defers the third (metric elicitation and mechanism design). It does not give the formula linking the metric weights to the classifier threshold; the wiki leaves it out too.",
       "Lecture 3 names a recidivism-prediction company and algorithm that the captions spell 'North Point' and 'compass'; no course document gives the spelling, so the wiki keeps the captions' form.",
       "Lecture 4 names several people and organizations that the captions garble (the originator of incentive compatibility, the tutorial author and the instructor it recommends, the artist and auction house in a student's story). No course document gives the spellings, so they are kept as captioned and marked unclear. The terms 'prophet inequality' and 'secretary problems' are restored from the captions' 'profit inequality' and 'sector problems' and the lecturer's descriptions; no course document prints them.",
       "Lecture 4 does not read out the formula for Myerson's virtual values, and the wiki does not supply one. The paper linking metric elicitation to mechanism design that lecture 3 deferred to this lecture is not taken up in the lecture 4 recording.",
-      "Lecture 5 is built on tutorials and papers shown on its slides. The tutorials' author, the author of a quoted line about technologies that disappear, a code-review tool and an interpretability method are garbled in the captions and kept as captioned; the papers behind the prompting figure and the pair-programming evaluation are not named aloud and are not identified. The one system named aloud, PromptCharm, and the terms 'five whys', 'cross attention', 'underreliance' and 'overreliance' are restored from the captions' sound ('prompt charm', 'five W's', 'cross detention', 'underlyance', 'overreiance'). Lecture 3 said it might use its metric-elicitation stakeholder study in the HCI lecture; the lecture 5 recording does not mention metric elicitation."
+      "Lecture 5 is built on tutorials and papers shown on its slides. The tutorials' author, the author of a quoted line about technologies that disappear, a code-review tool and an interpretability method are garbled in the captions and kept as captioned; the papers behind the prompting figure and the pair-programming evaluation are not named aloud and are not identified. The one system named aloud, PromptCharm, and the terms 'five whys', 'cross attention', 'underreliance' and 'overreliance' are restored from the captions' sound ('prompt charm', 'five W's', 'cross detention', 'underlyance', 'overreiance'). Lecture 3 said it might use its metric-elicitation stakeholder study in the HCI lecture; the lecture 5 recording does not mention metric elicitation.",
+      "Lecture 6 is a guest lecture by Daniel Frederick Webber (the course site's spelling; the captions say 'Dan Weber'). The name Bostrom, to whom it attributes the paperclip example, is restored from the captions' 'Bostonramm' and 'Boston'; no course document prints it, and the book is not named aloud. A moral-philosophy case the captions call the 'scan transmitter room case' is left as captioned. The 2020 work by Jason Gabriel that it quotes is on a slide and not named. The recording ends at about 1:11, partway through the list of risks for the ESR statement; the ESR instructions and templates it mentions are not linked from the 2024 course site."
     ]
   },
   "entryPoint": "INDEX.md",

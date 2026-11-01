@@ -10,9 +10,12 @@ modelling individuals separately or together, and
 [lecture 3](03-model-based-preference-optimization.md) on fairness measures that disagree, and
 [lecture 4](04-mechanism-design.md) on who decides what outcome a mechanism aims for and on paying
 labellers by harm, and [lecture 5](05-human-centered-design.md) on designing for some people and
-leaving others out, fairness, accountability, and stakeholder groups in evaluation. Lecture 5 defers
-accountability, fairness, transparency and ethics to "a separate lecture" (≈57:58). The catalog has a
-later lecture titled *Ethics* and one titled *Voting*. Neither is yet in this knowledge base.
+leaving others out, fairness, accountability, and stakeholder groups in evaluation, and
+[lecture 6](06-ethics.md), a guest lecture on value alignment, on people other than the user,
+paternalism, and the ESR statement's questions about whose interests a project represents. Lecture 5
+defers accountability, fairness, transparency and ethics to "a separate lecture" (≈57:58). Lecture 6
+takes up ethics as value alignment and does not return to accountability, fairness or transparency.
+The catalog lecture titled *Voting* is not yet in this knowledge base.
 
 ## Choosing the humans
 
@@ -148,8 +151,37 @@ so there is "no universality" (≈30:48–32:22). Metric elicitation is Koyejo's
 is not a right answer, but perhaps for particular stakeholders there's a right answer for them", so
 the tool helps each stakeholder find theirs (≈33:08).
 
+## Beyond the user: other people and paternalism
+
+Lecture 6 asks whose good an aligned system should serve. Most of the lecture is about the user:
+their intentions, preferences and best interests. Then Webber names the gap: "we just haven't been
+thinking yet about really anybody other than the user. But of course the user is not the only person
+in the world who matters" (lecture 6, ≈50:18, ≈51:05). "I might intend or prefer for my AI to do
+something that would be bad for other people". The paperclip AI "isn't value aligned if it maximizes
+production by enslaving the workers, even if I, the factory owner, have no qualms about that"
+(≈51:53, ≈52:39). Aligning to what is morally right then runs into moral disagreement, among
+philosophers and "people more generally" (≈53:25). See [value alignment](value-alignment.md).
+
+Serving a user's interests rather than their preferences raises **paternalism**: "choosing what you
+think is best for someone rather than letting them decide for themselves" (≈22:26, ≈23:13). In the
+lecture's news-chatbot exercise, giving users facts instead of gossip, or opposing views instead of an
+echo chamber, may be better for them. But "do I want to put myself in the position of being the one
+to judge that?" (≈45:38, ≈46:26). A student argues that someone decides regardless, "because of
+defaults": most users never change them, so "there's a lot of agency in design, picking the default
+behavior" (≈47:13).
+
+**The ESR statement.** Lecture 6 also explains the one-page Ethics and Society Review (ESR) statement
+the final project requires. "The ESR is to societal risks what the IRB is to risks to human subjects"
+(≈1:07:19, ≈1:08:05). Among the common risks it lists are "whose interests are represented in the
+research, whose interests might be excluded", how to take "those excluded interests into account",
+and "who might benefit or be harmed by the success of it" (≈1:09:36, ≈1:10:22). The template's example
+mitigation for a tool for users with low vision is "a series of co-design workshops with stakeholders"
+(≈1:09:36). See [lecture 6](06-ethics.md#the-esr-statement-for-the-final-project).
+
 ## Related pages
 
+- [Value alignment](value-alignment.md): intentions, preferences, interests and morality as targets.
+- [Lecture 6 — Ethics](06-ethics.md)
 - [Asking humans for preferences](preference-queries.md): rationality, noise and strategic behaviour.
 - [Discrete choice models](discrete-choice-models.md)
 - [Lecture 1 — Introduction](01-introduction.md)

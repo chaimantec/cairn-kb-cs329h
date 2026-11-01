@@ -5,15 +5,17 @@ says about *how* to ask: absolute ratings or comparisons, one-shot or interactiv
 many questions to ask, and what to assume about the answers.
 
 **Sources so far:** [lecture 1](01-introduction.md), [lecture 2](02-preference-models.md),
-[lecture 3](03-model-based-preference-optimization.md) and [lecture 4](04-mechanism-design.md).
+[lecture 3](03-model-based-preference-optimization.md), [lecture 4](04-mechanism-design.md),
+[lecture 5](05-human-centered-design.md) and [lecture 6](06-ethics.md).
 Lecture 2 builds the models of human choice that sit on top of these queries; they have their own
 page, [discrete choice models](discrete-choice-models.md). Lecture 3 counts the queries a specific
 elicitation problem needs, and asks what kind of question people can answer. Lecture 4 asks what
 happens when the people answering are strategic, and treats prices as preferences; that material
 has its own page, [mechanism design](mechanism-design.md). Lecture 5 places these queries inside a
 larger design process and treats human preference as one way to evaluate a system; that material has
-its own page, [human–AI interaction](human-ai-interaction.md). Later lectures are not yet in this
-knowledge base.
+its own page, [human–AI interaction](human-ai-interaction.md). Lecture 6 asks what a preference
+signal can and cannot tell you about what a person really wants; that material has its own page,
+[value alignment](value-alignment.md). Later lectures are not yet in this knowledge base.
 
 ## Efficient and effective elicitation
 
@@ -176,6 +178,27 @@ no reason to shade them (≈18:36). Lecture 4 also lists learning "with various 
 preferences" under pricing, observing buyers' actions over iterations to predict their future
 behaviour, among the questions where learning meets mechanisms (≈58:53).
 
+**What preferences can and cannot stand in for.** Lecture 6's guest lecturer, Daniel Frederick
+Webber, places preference learning among several readings of what an AI should serve. Intentions can
+diverge from preferences, when "I have incomplete information" or "I'm not being perfectly rational".
+The general solution then "is to try to infer user preferences from behavior or feedback", which he
+takes to be "the motivating insight of machine learning from human preferences, or human feedback, in
+the first place" (lecture 6, ≈14:42, ≈17:01). He stresses two limits. Finite feedback means "there are
+infinitely many preference or reward functions that are consistent with what you've already
+observed". And observing people means "mostly observing situations that occur normally", with little
+data on "cases of emergency", which may be the cases that matter most (≈17:46, ≈18:32). Preferences
+can also diverge from a person's best interest. What that interest is is "not an entirely empirical
+question", so "you couldn't just figure out what your goal was by observing human behavior or by
+getting feedback from people" (≈20:06). If the target is "the user's revealed preferences", he
+suggests "something like, I don't know, inverse reinforcement learning" may make more sense than other
+techniques (≈30:56).
+
+A student in the same lecture contrasts two ways of collecting feedback, "where you pick A versus B",
+or "where you look at two outputs and then maybe you type feedback". A forced choice is easier in
+some circumstances, and in others "I can certainly give high-level language" (lecture 6, ≈28:36,
+≈29:22). Webber agrees, and treats it as a question about how to train, separate from what the goal
+is (≈29:22, ≈30:09). See [value alignment](value-alignment.md).
+
 ## Noise, inconsistency and rationality
 
 Human answers are not clean. A student notes that people "don't agree with themselves 25% of the
@@ -245,3 +268,5 @@ which lecture 2 develops; see [discrete choice models](discrete-choice-models.md
 - [Human–AI interaction](human-ai-interaction.md): where queries sit in designing, enabling and
   evaluating an interaction.
 - [Lecture 5 — Human-centered Design](05-human-centered-design.md)
+- [Value alignment](value-alignment.md): intentions, preferences and interests as different targets.
+- [Lecture 6 — Ethics](06-ethics.md)

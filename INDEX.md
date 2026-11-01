@@ -5,13 +5,15 @@ systems, taught by **Sanmi Koyejo** with teaching fellow Sang Truong. It covers 
 preferences from people efficiently and effectively, and how to build them into models. The course
 website names three threads: inverse reinforcement learning, metric elicitation, and reinforcement
 learning from human feedback. It mixes lectures, invited speakers and student-led paper discussions,
-with homework (60%) and a group project (40%).
+with homework (60%) and a group project (40%). Lecture 6 is a guest lecture by the philosopher Daniel
+Frederick Webber.
 
-> **Coverage: lectures 1–5 of 8.** This knowledge base covers **lecture 1 (Introduction)**,
+> **Coverage: lectures 1–6 of 8.** This knowledge base covers **lecture 1 (Introduction)**,
 > **lecture 2 (Preference Models)**, **lecture 3 (Model-based Preference Optimization, on metric
-> elicitation)**, **lecture 4 (Mechanism Design)** and **lecture 5 (Human-centered Design)** of the
-> eight catalog lectures. Questions about the later lectures (ethics, voting, and the guest lecture by
-> Joseph Jay Williams) **cannot be answered from this KB yet**. Say so rather than answering from the lecture 1 overview, which only
+> elicitation)**, **lecture 4 (Mechanism Design)**, **lecture 5 (Human-centered Design)** and
+> **lecture 6 (Ethics, a guest lecture on value alignment)** of the eight catalog lectures. Questions
+> about the later lectures (voting, and the guest lecture by Joseph Jay Williams) **cannot be answered
+> from this KB yet**. Say so rather than answering from the lecture 1 overview, which only
 > previews them. Some sessions on the schedule are not in the catalog at all. Lecture 2 defers the
 > ideal point model to one of them, and lecture 3 builds on an active-learning lecture (Oct 14)
 > that is not in the catalog either. Lecture 4 follows bandit and Bayesian-optimization sessions
@@ -27,7 +29,8 @@ with homework (60%) and a group project (40%).
 > fell on Oct 30. Lecture 1 is the Sep 23 introduction on the schedule; lecture 2 is most likely the
 > Sep 25 "Individual Preference Models" lecture; lecture 3 is the Oct 16 "Model-based Preferences
 > Optimization via Preference Elicitation" lecture; lecture 4 is the Oct 28 "Aggregated Preference
-> Optimization via Mechanism Design" lecture; lecture 5 is the Nov 11 "Human-centered Design" lecture.
+> Optimization via Mechanism Design" lecture; lecture 5 is the Nov 11 "Human-centered Design" lecture;
+> lecture 6, titled *Ethics* in the catalog, is the Nov 18 guest lecture by Daniel Frederick Webber.
 > Each page gives the evidence.
 
 ## Lectures
@@ -88,7 +91,20 @@ with homework (60%) and a group project (40%).
   human–AI interaction (quantitative versus qualitative, intrinsic versus extrinsic, metrics, what,
   who and when). Includes a table of every student question.
 
-Catalog lectures not yet in this KB: 6 Ethics · 7 Voting · 8 Guest Lecture: Joseph Jay Williams.
+- [Lecture 6 — Ethics (guest lecture: value alignment)](wiki/06-ethics.md): Daniel Frederick
+  Webber, a philosopher at Stanford, on what "do what we really want" can mean. Covers the paperclip
+  AI and why better instructions, like manual reward functions, miss failure cases; three readings
+  centred on the user (what they intend, what they prefer, what is in their best interest) and the
+  technical and philosophical problem each brings (implied meaning, inferring preferences from finite
+  feedback, disagreement about the good); autonomy and paternalism; the goal of alignment versus the
+  training method (revealed preferences and inverse reinforcement learning); a pair exercise on a
+  personalized news chatbot (facts versus gossip, echo chambers, conflicting interests, defaults);
+  aligning to moral value, with a tour of moral theories (consequentialism, utilitarianism, weighted
+  sums, maximin and the transmitter-room case, deontology) and common-sense morality; refusing to act
+  as a choice; power seeking; and the one-page ESR (Ethics and Society Review) statement the final
+  project requires. Includes a table of every student question.
+
+Catalog lectures not yet in this KB: 7 Voting · 8 Guest Lecture: Joseph Jay Williams.
 
 ## Topics
 
@@ -118,7 +134,8 @@ Each topic page gathers one concept across lectures, and says at the top which l
   transitivity, the uniqueness assumption behind binary search, and the rational-human assumption;
   prices as revealed preferences, strategic answerers and incentive compatibility (lecture 4);
   queries as tools for enabling a human–AI interaction, and human preference as an evaluation
-  signal (lecture 5). Lectures 1–5.
+  signal (lecture 5); what preference signals can and cannot stand in for, and A-versus-B against
+  typed feedback (lecture 6). Lectures 1–6.
 - [Mechanism design: auctions, incentives and truthful elicitation](wiki/mechanism-design.md): the
   vocabulary (types, allocation, payments, revenue, utility), incentive compatibility at three levels
   of information and individual rationality, a table comparing posted prices, first- and
@@ -131,8 +148,15 @@ Each topic page gathers one concept across lectures, and says at the top which l
   evaluating it), posing questions people can answer (metric elicitation, PromptCharm), trust and
   reliance, transparency, and evaluating human–AI systems (how, what, who, when). Lectures 1, 3 and 5
   (lecture 5 is the main source).
+- [Value alignment: intentions, preferences, interests and morality](wiki/value-alignment.md): what
+  "what we really want" can mean, with a table of the four readings, the problem each brings and where
+  the course's preference methods fit; the paperclip AI; paternalism, autonomy and defaults; aligning
+  to a moral theory or to common-sense morality; power seeking; and why the goal comes before the
+  method. Lectures 1, 5 and 6 (lecture 6 is the main source).
 - [Reward hacking](wiki/reward-hacking.md): the boat game-playing agent, length and bullet-point bias in
-  chatbots, and over-optimizing against a learned reward model.
+  chatbots, over-optimizing against a learned reward model, and the paperclip AI as a specification
+  failure, the "same difficulty" as manually specifying a reward function (lecture 6). Lectures 1
+  and 6.
 - [Metric elicitation and inverse decision theory](wiki/metric-elicitation.md): using pairwise
   preferences to set a classifier's trade-offs when errors have asymmetric costs. Covers why the
   metric matters (Netflix Prize, recidivism prediction), the six steps of the binary-classification
@@ -147,7 +171,8 @@ Each topic page gathers one concept across lectures, and says at the top which l
   recidivism-prediction case) and the impossibility results in fairness; who decides a mechanism's
   goal, and paying labellers by harm (lecture 4); designing for some people and leaving others out,
   fairness, accountability (the asylum-translation example), and stakeholder groups as evaluators
-  (lecture 5). Lectures 1–5.
+  (lecture 5); people other than the user, paternalism and defaults, and the ESR statement's
+  questions about whose interests a project represents (lecture 6). Lectures 1–6.
 
 ## Raw materials
 

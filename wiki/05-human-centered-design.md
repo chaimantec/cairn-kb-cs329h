@@ -35,7 +35,9 @@ example "when we go back there", and might spend more time in "the HCI lecture" 
 the algorithmic problem and the human problem (lecture 3, ≈1:05:47, ≈1:09:41). This recording does
 not mention metric elicitation. Koyejo also defers two topics: accountability, fairness, transparency
 and ethics get "a separate lecture" (≈57:58), and matching AI decisions to human values comes "a
-couple of lectures from now" (≈1:05:39).
+couple of lectures from now" (≈1:05:39). [Lecture 6](06-ethics.md), the Nov 18 guest lecture on
+value alignment, takes up the second. It does not return to accountability, fairness or transparency,
+and neither recording says it is the lecture meant.
 
 [Edited transcript](../raw/transcripts/05-human-centered-design.md) ·
 [verbatim captions](../raw/transcripts/original/05-human-centered-design.md) ·
@@ -432,7 +434,7 @@ mentions four things that sometimes help (≈1:00:16–1:01:46):
   ethical perspectives, and "to what extent can we have decision-making from AI tools match human
   ethical principles and values" (≈1:04:53, ≈1:05:39). This is "part of the goal of the broader class",
   and he will return to it "a couple of lectures from now" (≈1:05:39). See
-  [whose preferences](whose-preferences.md).
+  [whose preferences](whose-preferences.md), and [lecture 6](06-ethics.md) on value alignment.
 
 ## Who starts the interaction
 
@@ -580,5 +582,7 @@ The ones that touch content:
   accountability, and stakeholder groups in evaluation.
 - [Lecture 3 — Model-based Preference Optimization](03-model-based-preference-optimization.md): the
   lecture that pointed ahead to this one.
+- [Lecture 6 — Ethics](06-ethics.md): the guest lecture on value alignment that follows this
+  module's opening.
 - [Lecture 1 — Introduction](01-introduction.md): the "all of AI will be HCI" claim and the course's
   stated limits on HCI.
