@@ -5,8 +5,9 @@ up valuing, and the work of supplying preferences has costs of its own for the p
 Lecture 1 says this course will "almost always have a meaningful ethical angle" and will "not shy
 away" from it (≈19:57, ≈21:29).
 
-**Sources so far:** [lecture 1](01-introduction.md), and [lecture 2](02-preference-models.md) on
-modelling individuals separately or together. The catalog has a later lecture titled *Ethics* and one
+**Sources so far:** [lecture 1](01-introduction.md), [lecture 2](02-preference-models.md) on
+modelling individuals separately or together, and
+[lecture 3](03-model-based-preference-optimization.md) on fairness measures that disagree. The catalog has a later lecture titled *Ethics* and one
 titled *Voting*. Neither is yet in this knowledge base.
 
 ## Choosing the humans
@@ -79,9 +80,27 @@ Interacting with a large stakeholder group is a way to specify a target (lecture
 [metric elicitation](metric-elicitation.md), which lists fairness problems and stakeholder groups among
 its applications.
 
+Lecture 3's example is **recidivism prediction**, a tool used to help judges in sentencing (≈27:43,
+≈28:29). The captions name the company "North Point" and the algorithm "compass". Its makers built
+it to a fairness notion. Roughly, for different bins of predicted risk, outcomes should be similar
+across demographic groups (≈28:29). ProPublica's later analysis used differences in false positive
+and false negative rates across groups instead. It found "black defendants were twice as likely to
+be incorrectly labeled as higher risk than white defendants" (≈29:15). Koyejo's point is that the
+claim the algorithm ignored fairness "is incorrect". Two "maybe well-meaning actors" with different
+normative views picked different measures and reached completely different conclusions about the
+same results (≈30:03, ≈30:48).
+
+The case helped end the hope, which he says had "maybe a bit of naivety", of one golden fairness
+measure that holds everywhere. The **impossibility results in fairness** followed. Roughly, "you can
+pick one, maybe two measures to sort of try to maximize at the same time, but you can't pick three",
+so there is "no universality" (≈30:48–32:22). Metric elicitation is Koyejo's group's response. "There
+is not a right answer, but perhaps for particular stakeholders there's a right answer for them", so
+the tool helps each stakeholder find theirs (≈33:08).
+
 ## Related pages
 
 - [Asking humans for preferences](preference-queries.md): rationality, noise and strategic behaviour.
 - [Discrete choice models](discrete-choice-models.md)
 - [Lecture 1 — Introduction](01-introduction.md)
 - [Lecture 2 — Preference Models](02-preference-models.md)
+- [Lecture 3 — Model-based Preference Optimization](03-model-based-preference-optimization.md)

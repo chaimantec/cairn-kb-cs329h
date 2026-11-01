@@ -9,10 +9,10 @@
     "courseUrl": "https://web.stanford.edu/class/cs329h/fall2024/"
   },
   "coverage": {
-    "lecturesCovered": 2,
+    "lecturesCovered": 3,
     "lecturesTotal": 8,
-    "transcripts": 2,
-    "wikiLecturePages": 2,
+    "transcripts": 3,
+    "wikiLecturePages": 3,
     "wikiTopicPages": 6
   },
   "materials": {
@@ -20,7 +20,7 @@
     "slideDecks": {
       "available": 0,
       "transcribed": 0,
-      "note": "The course publishes no slides. The Autumn 2024 site, its slides/ path, and the Autumn 2023 and Autumn 2025 archives were checked on 2026-11-01."
+      "note": "The course publishes no slides. The Autumn 2024 site, its slides/ path, and the Autumn 2023 and Autumn 2025 archives were checked on 2026-11-01, and again before lectures 2 and 3 were added."
     },
     "textbook": {
       "url": "https://mlhp.stanford.edu/",
@@ -40,11 +40,13 @@
       "claude-sonnet-5-5"
     ],
     "caveats": [
-      "Partial coverage: lectures 1-2 of 8. Topic pages draw on lectures 1 and 2 only.",
+      "Partial coverage: lectures 1-3 of 8. Topic pages draw on lectures 1-3 only; the discrete-choice-models page on lectures 1-2.",
       "Transcript-only: no slides exist publicly, so papers and references shown on the slides are described as the lectures describe them and are not named or cited. Formulas on the wiki pages are rebuilt from what the lecturer says aloud, not read off slides.",
-      "Transcripts were copy-edited by a Sonnet subagent and checked by script (identical timestamp sequence, number inventory, per-paragraph word-count ratio keyed by timestamp). Lecture 1 has 22 passages marked [Ed: unclear], lecture 2 has 21. One lecture-2 paragraph (1:11:28) dropped by the agent was restored in the parent.",
+      "Transcripts were copy-edited by a Sonnet subagent and checked by script in the parent (identical timestamp sequence, number inventory, per-paragraph word-count ratio keyed by timestamp). Lecture 1 has 22 passages marked [Ed: unclear], lecture 2 has 21, lecture 3 has 33. One lecture-2 paragraph (1:11:28) dropped by the agent was restored in the parent; in lecture 3 a student sentence the agent had moved from 3:54 into 3:07 was moved back.",
       "The lecture-1 recording ends at about 1:17, as the lecturer turns to choice models; that material is not in the video.",
-      "Lecture 2 defers the ideal point model to the next lecture and skips its planned exercises; neither is in the lecture 2 recording, and the schedule's next individual-preference-models lecture (Sep 30) is not in the catalog."
+      "Lecture 2 defers the ideal point model to the next lecture and skips its planned exercises; neither is in the lecture 2 recording, and the schedule's next individual-preference-models lecture (Sep 30) is not in the catalog.",
+      "Lecture 3 builds on an active-learning lecture (Oct 14 on the schedule) that is not in the catalog. It covers the first of three planned papers in full, sketches the second (inverse decision theory) and defers the third (metric elicitation and mechanism design). It does not give the formula linking the metric weights to the classifier threshold; the wiki leaves it out too.",
+      "Lecture 3 names a recidivism-prediction company and algorithm that the captions spell 'North Point' and 'compass'; no course document gives the spelling, so the wiki keeps the captions' form."
     ]
   },
   "entryPoint": "INDEX.md",

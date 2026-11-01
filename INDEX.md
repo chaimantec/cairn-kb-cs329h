@@ -7,12 +7,14 @@ website names three threads: inverse reinforcement learning, metric elicitation,
 learning from human feedback. It mixes lectures, invited speakers and student-led paper discussions,
 with homework (60%) and a group project (40%).
 
-> **Coverage: lectures 1–2 of 8.** This knowledge base covers **lecture 1 (Introduction)** and
-> **lecture 2 (Preference Models)** of the eight catalog lectures. Questions about later lectures
-> (model-based preference optimization, mechanism design, human-centered design, ethics, voting, and
-> the guest lecture by Joseph Jay Williams) **cannot be answered from this KB yet**. Say so rather
-> than answering from the lecture 1 overview, which only previews them. Lecture 2 also defers the
-> ideal point model to a lecture that is not in the catalog.
+> **Coverage: lectures 1–3 of 8.** This knowledge base covers **lecture 1 (Introduction)**,
+> **lecture 2 (Preference Models)** and **lecture 3 (Model-based Preference Optimization, on metric
+> elicitation)** of the eight catalog lectures. Questions about later lectures (mechanism design,
+> human-centered design, ethics, voting, and the guest lecture by Joseph Jay Williams) **cannot be
+> answered from this KB yet**. Say so rather than answering from the lecture 1 overview, which only
+> previews them. Some sessions on the schedule are not in the catalog at all. Lecture 2 defers the
+> ideal point model to one of them, and lecture 3 builds on an active-learning lecture (Oct 14)
+> that is not in the catalog either.
 >
 > **No slides.** The course has not published its slides for any offering, so this KB is built
 > from the lecture transcripts. Pages cite **transcript timestamps** (≈MM:SS), not slide numbers.
@@ -22,7 +24,8 @@ with homework (60%) and a group project (40%).
 > **Numbering.** Files use the **catalog position** (lecture 1 = `01-…`). The catalog's order does
 > not follow the website schedule; for example, the Williams guest lecture is catalog position 8 but
 > fell on Oct 30. Lecture 1 is the Sep 23 introduction on the schedule; lecture 2 is most likely the
-> Sep 25 "Individual Preference Models" lecture (its page gives the evidence).
+> Sep 25 "Individual Preference Models" lecture; lecture 3 is the Oct 16 "Model-based Preferences
+> Optimization via Preference Elicitation" lecture. Each page gives the evidence.
 
 ## Lectures
 
@@ -44,9 +47,20 @@ with homework (60%) and a group project (40%).
   correlated noise; multiclass models; pooling versus modelling individuals; Likert scales and the
   ordered logit; rankings and the Plackett–Luce ("exploded logit") model; rationality as
   transitivity; and revealed versus stated preferences. Includes a table of every student question.
+- [Lecture 3 — Model-based Preference Optimization (metric elicitation)](wiki/03-model-based-preference-optimization.md):
+  choosing a classifier's metric by asking a stakeholder. Why active learning suits preference
+  elicitation; asymmetric error costs (the medical example, three models with different error
+  rates); why the metric is "not a free choice" (the Netflix Prize and RMSE, the recidivism-prediction
+  dispute and the impossibility results in fairness); linear metrics as two weights on false
+  positives and false negatives; the confusion matrix and its two degrees of freedom; why optimal
+  classifiers for weighted errors are thresholds; the ROC boundary, convexity and the reduction to a
+  one-dimensional search; binary search over pairwise comparisons and its $\log(1/\epsilon)$ query
+  bound; the gap in posing population-level questions; whether it generalizes beyond
+  classification; and a sketch of inverse decision theory with probabilistic bisection. Includes a
+  table of every student question.
 
-Catalog lectures not yet in this KB: 3 Model-based Preference Optimization · 4 Mechanism Design ·
-5 Human-centered Design · 6 Ethics · 7 Voting · 8 Guest Lecture: Joseph Jay Williams.
+Catalog lectures not yet in this KB: 4 Mechanism Design · 5 Human-centered Design · 6 Ethics ·
+7 Voting · 8 Guest Lecture: Joseph Jay Williams.
 
 ## Topics
 
@@ -63,21 +77,29 @@ Each topic page gathers one concept across lectures, and says at the top which l
   (what they are mechanically, why separately trained ones don't plug in, DPO and behaviour cloning
   as ways to do without one, and Koyejo's case for keeping them); RLAIF; why academia does less of
   this than industry; the comparison step as a choice model, reward as utility, and language-model
-  preference data as stated preferences (lecture 2).
+  preference data as stated preferences (lecture 2); reward, utility and metric as one object, and
+  why query counts are unknown for RLHF (lecture 3).
 - [Asking humans for preferences: queries, comparisons and noise](wiki/preference-queries.md): query
   efficiency; explicit versus implicit preference signals; absolute ratings versus pairwise
   comparisons (the exoskeleton result); ratings and rankings and the models for each; dueling
-  bandits; one-shot versus interactive collection; revealed versus stated preferences; human
-  inconsistency, Bernoulli models, rationality as transitivity, and the rational-human assumption.
+  bandits; active learning and query complexity (with metric elicitation's $\log(1/\epsilon)$
+  bound); one-shot versus interactive collection; population-level versus example-level questions;
+  revealed versus stated preferences; human inconsistency, Bernoulli models, rationality as
+  transitivity, the uniqueness assumption behind binary search, and the rational-human assumption.
+  Lectures 1–3.
 - [Reward hacking](wiki/reward-hacking.md): the boat game-playing agent, length and bullet-point bias in
   chatbots, and over-optimizing against a learned reward model.
 - [Metric elicitation and inverse decision theory](wiki/metric-elicitation.md): using pairwise
-  preferences to set a classifier's trade-offs when errors have asymmetric costs; inferring a decision
-  threshold from feedback.
+  preferences to set a classifier's trade-offs when errors have asymmetric costs. Covers why the
+  metric matters (Netflix Prize, recidivism prediction), the six steps of the binary-classification
+  method from linear metrics to binary search, its assumptions and limits, the extensions, and
+  inverse decision theory (inferring a decision threshold from answers about individual examples,
+  with probabilistic bisection). Lectures 1 and 3.
 - [Whose preferences: representation, labour and ethics](wiki/whose-preferences.md): choosing which
   humans to ask; aggregation and strategic agents; representative sampling; one shared utility
   versus one per person; the Pew-survey finding that language models reflect Californian opinions;
-  the ethics of outsourced preference labelling.
+  the ethics of outsourced preference labelling; fairness measures that disagree (the
+  recidivism-prediction case) and the impossibility results in fairness. Lectures 1–3.
 
 ## Raw materials
 

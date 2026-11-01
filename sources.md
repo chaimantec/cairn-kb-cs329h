@@ -7,7 +7,7 @@ directly.
 
 **The course publishes no slide decks.** The Autumn 2024 site, its `slides/` path,
 and the Autumn 2023 and Autumn 2025 archives were all checked on 2026-11-01, and checked
-again before lecture 2 was added; none links a lecture deck. This knowledge base is therefore built from the lecture
+again before lectures 2 and 3 were added; none links a lecture deck. This knowledge base is therefore built from the lecture
 transcripts, and the wiki cites transcript timestamps rather than slide numbers.
 
 ## Course website
@@ -54,3 +54,4 @@ and expect its framing to differ from the lectures in places.
 | --- | --- |
 | 1 Introduction | <https://www.youtube.com/watch?v=ApF2OenMgfc> |
 | 2 Preference Models | <https://www.youtube.com/watch?v=-bych9RfQvw> |
+| 3 Model-based Preference Optimization | <https://www.youtube.com/watch?v=7i6WsIzZaeo> |

@@ -4,10 +4,12 @@ Every method in this course starts by asking people something. This page collect
 says about *how* to ask: absolute ratings or comparisons, one-shot or interactive collection, how
 many questions to ask, and what to assume about the answers.
 
-**Sources so far:** [lecture 1](01-introduction.md) and [lecture 2](02-preference-models.md).
-Lecture 2 builds the models of human choice that sit on top of these queries; they have their own
-page, [discrete choice models](discrete-choice-models.md). Later lectures are not yet in this
-knowledge base.
+**Sources so far:** [lecture 1](01-introduction.md), [lecture 2](02-preference-models.md) and
+[lecture 3](03-model-based-preference-optimization.md). Lecture 2 builds the models of human choice
+that sit on top of these queries; they have their own page,
+[discrete choice models](discrete-choice-models.md). Lecture 3 counts the queries a specific
+elicitation problem needs, and asks what kind of question people can answer. Later lectures are not
+yet in this knowledge base.
 
 ## Efficient and effective elicitation
 
@@ -23,6 +25,21 @@ The course's working definition asks how to elicit preferences **efficiently and
 
 Because human queries are expensive, almost every problem in the course is a problem of learning from
 limited samples, under a budget on sample size (≈23:48, ≈24:37).
+
+**Active learning** is the course's main tool for this. Instead of labelling whatever examples nature
+provides, the procedure "explicitly seeks which examples need labeling". In a suitably structured
+problem it learns much faster, as measured by **sample complexity** or **query complexity**, the
+number of labels needed (lecture 3, ≈2:22, ≈3:07). Koyejo argues it fits preference learning
+especially well, because "people get bored very quickly", and collecting samples from people "is
+fraught because people get tired and it may be expensive" (≈4:40, ≈5:25). He also calls active
+learning a gap in the preference-learning literature (≈3:54). The lecture on active learning itself
+(Oct 14 on the schedule) is not in the catalog. Lecture 3 recaps it.
+
+Query complexity can rarely be pinned down. "I don't know how to do this for RLHF," Koyejo says, but
+in structured settings there are bounds (lecture 3, ≈6:59, ≈7:44). In
+[metric elicitation](metric-elicitation.md) for binary classification, binary search over pairwise
+comparisons reaches accuracy $\epsilon$ in about $\log(1/\epsilon)$ questions. He is "pretty sure"
+that is the lower bound without further assumptions (≈1:04:14).
 
 ## Explicit versus implicit preference signals
 
@@ -52,7 +69,9 @@ Comparisons appear throughout the lecture's examples:
 - **Humour and other unspecifiable targets.** Nobody can write down the equation for "funny", but
   people can say which statement is funnier, and that ranking is a training signal (≈56:23).
 - **Classification trade-offs.** [Metric elicitation](metric-elicitation.md) uses pairwise preferences
-  to tune a classifier's trade-offs to expert judgment (≈1:08:43, ≈1:09:31).
+  to tune a classifier's trade-offs to expert judgment (≈1:08:43, ≈1:09:31). Lecture 3 shows that
+  pairwise questions are enough. Binary search works even when the stakeholder can only say which
+  of two classifiers they prefer, not score either one (lecture 3, ≈58:04).
 - **Recommender systems.** The field has developed many kinds of query and feedback: thumbs up or down
   on a single item, pairwise preferences, rankings and ratings (≈1:11:49).
 
@@ -71,6 +90,25 @@ In the language-model pipeline, collecting demonstrations for supervised fine-tu
 one-shot": a large offline effort to get good examples. Collecting preferences "is typically best done
 interactively", although some work does it offline. The course covers the technical differences
 (lecture 1, ≈38:40).
+
+## Population-level or example-level questions
+
+A query has to be something a person can answer, and lecture 3 names this as "one of the big gaps"
+in metric elicitation (≈1:06:35). The method asks a stakeholder to compare two classifiers by their
+performance over a whole population, which "needs a fairly sophisticated stakeholder" (≈1:08:07). To
+help, you can ground them in the fact that no classifier is perfect. Then show scenarios of what a
+false positive or a false negative means, and relate those to the population through base error
+rates (≈1:07:21, ≈1:08:07).
+
+Questions about **single examples** ("would you prefer this mistake versus other mistake?") are
+easier to answer. But the metric being elicited then has to depend on the example, which makes the
+space of metrics much more complicated (≈1:08:54). Koyejo's group deliberately asked
+population-level questions, so that the framing of the question matched the population-level metric
+being elicited. A mismatch between "the way you ask in the question and the set of kinds of metrics
+that you're asking for" leads to other errors (≈1:09:41). His takeaway is that useful elicitation
+needs "some meaningful connection between the algorithmic problem and sort of the human problem"
+(≈1:09:41). The inverse decision theory work in the same lecture takes the other route and asks
+about the labelling of individual examples (≈1:17:29, ≈1:18:15).
 
 ## Revealed versus stated preferences
 
@@ -131,6 +169,12 @@ one view is that "if we had sufficient appropriate context we can almost always 
 rational". The course treats rationality as "a pragmatic modeling choice" and will cover cases where
 it is "for sure broken" (≈1:05:15–1:06:50).
 
+Lecture 3 shows what such an assumption buys. Binary search for a stakeholder's metric needs their
+preferences to be unimodal along the search. That rests on "a weak uniqueness assumption", which
+Koyejo connects to rationality: a utility exists, is unique, and is well approximated by the class
+being searched. When it fails, the method breaks (lecture 3, ≈58:50, ≈59:36). If answers are noisy,
+as in the Boltzmann setting, a probabilistic version of the search is needed (≈1:01:07, ≈1:19:48).
+
 The course's working assumption is stated plainly. Most of the work assumes "some kind of rational
 human": there exists a reward function, "some sort of explicit deterministic function that tells us
 what a human would prefer", even when it is not written down, and the models are built on it. "But it
@@ -146,3 +190,5 @@ which lecture 2 develops; see [discrete choice models](discrete-choice-models.md
 - [Discrete choice models](discrete-choice-models.md): the models fitted to these answers.
 - [Lecture 1 — Introduction](01-introduction.md)
 - [Lecture 2 — Preference Models](02-preference-models.md)
+- [Lecture 3 — Model-based Preference Optimization](03-model-based-preference-optimization.md)
+- [Metric elicitation](metric-elicitation.md): a worked case where the number of queries is known.

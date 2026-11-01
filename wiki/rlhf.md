@@ -7,8 +7,10 @@ treats it as one instance of a broader problem, learning from explicit human pre
 rather than as the whole subject. Its specific interest is the step where preferences are collected.
 
 **Sources so far:** [lecture 1](01-introduction.md), which surveys the pipeline without
-equations, and [lecture 2](02-preference-models.md), which supplies the choice models behind the
-comparison step and comments on language-model preference data. Later lectures are not yet in this
+equations; [lecture 2](02-preference-models.md), which supplies the choice models behind the
+comparison step and comments on language-model preference data; and three remarks in
+[lecture 3](03-model-based-preference-optimization.md), which is about classification metrics, not
+language models. Later lectures are not yet in this
 knowledge base.
 
 ## Why it matters to the course
@@ -118,6 +120,16 @@ cost to making a decision either way". He thinks the field does not engage enoug
 between stated and revealed preferences (lecture 2, ≈1:09:07). See
 [revealed versus stated preferences](preference-queries.md#revealed-versus-stated-preferences).
 
+## Remarks from the metric-elicitation lecture
+
+Lecture 3 is not about language models, but it makes three remarks that bear on them. First,
+"reward, utility, metric roughly mean the same thing" from the course's point of view (≈17:46).
+Second, counting the human queries a problem needs is hard here: "I don't know how to do this for
+RLHF, as a specific statement", unlike the classification setting, where bounds exist (≈6:59,
+≈7:44). Third, Koyejo offers an analogy for the classification methods it covers. Getting the
+probability model is like pre-training, and finding the weights or threshold for the decision
+setting is like preference tuning (≈1:19:01). See [metric elicitation](metric-elicitation.md).
+
 ## Who does this work
 
 Most published work on real-world learning from human preferences comes from industry. Collecting
@@ -142,3 +154,5 @@ plans to implement RLHF-style methods, including DPO, on language models in home
 - [Discrete choice models](discrete-choice-models.md): the utility models behind comparison data.
 - [Lecture 1 — Introduction](01-introduction.md)
 - [Lecture 2 — Preference Models](02-preference-models.md)
+- [Lecture 3 — Model-based Preference Optimization](03-model-based-preference-optimization.md)
+- [Metric elicitation](metric-elicitation.md): the classification setting lecture 3's remarks come from.

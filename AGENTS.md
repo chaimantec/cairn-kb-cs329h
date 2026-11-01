@@ -69,6 +69,9 @@ printed slips, which slides were rendered and why) goes in
   Key the ratio check **by timestamp, not by position**, and re-run the marker diff in the parent
   rather than trusting the agent's report: a dropped paragraph shifts a positional pairing, and
   neighbouring ~45-second paragraphs are similar enough in length to pass.
+  Read every ratio outlier against its own original paragraph **and the neighbouring ones**. A
+  sentence moved across a marker raises one paragraph and lowers its neighbour, often only the first
+  out of band, and the agent's explanation of an outlier is a claim to check, not evidence.
 - **Topic pages** open with a `**Sources so far:**` line naming the lectures they draw on. Update
   it when a later lecture adds to the page, and update the coverage note in `INDEX.md` and the
   "not yet in this KB" lecture list with it.
