@@ -10,7 +10,9 @@ Lecture 2 builds the models of human choice that sit on top of these queries; th
 page, [discrete choice models](discrete-choice-models.md). Lecture 3 counts the queries a specific
 elicitation problem needs, and asks what kind of question people can answer. Lecture 4 asks what
 happens when the people answering are strategic, and treats prices as preferences; that material
-has its own page, [mechanism design](mechanism-design.md). Later lectures are not yet in this
+has its own page, [mechanism design](mechanism-design.md). Lecture 5 places these queries inside a
+larger design process and treats human preference as one way to evaluate a system; that material has
+its own page, [human–AI interaction](human-ai-interaction.md). Later lectures are not yet in this
 knowledge base.
 
 ## Efficient and effective elicitation
@@ -111,6 +113,29 @@ that you're asking for" leads to other errors (≈1:09:41). His takeaway is that
 needs "some meaningful connection between the algorithmic problem and sort of the human problem"
 (≈1:09:41). The inverse decision theory work in the same lecture takes the other route and asks
 about the labelling of individual examples (≈1:17:29, ≈1:18:15).
+
+## Asking as part of a design process
+
+Lecture 5 puts the course's queries in a wider frame. Human–AI interaction work has three steps:
+design the interaction, enable it, and evaluate it. The course's methods are tools for the middle step:
+"most of what we've covered in this class is in some ways you can think of as tools that you can bring
+to bear to make the interaction probably easier" (lecture 5, ≈41:45). His examples are easing the
+burden of interaction "by personalization, by getting pairwise preferences from people" (≈41:45).
+
+The lecture's main example shows how hard it is for people to say what they want. PromptCharm's user
+studies found "significant conceptual gaps when a novice user writes prompts for image creation":
+users have a clear image or style in mind but trouble articulating it (≈48:41). Its answer is an
+interface rather than a better question. It exposes the automatic prompt rewrite, suggests styles,
+lets users weight terms up or down, and supports quick, cheap exploration (≈49:28–52:37). Lecture 3
+reached a similar conclusion about metric elicitation: useful elicitation needs "some meaningful
+connection between the algorithmic problem and sort of the human problem" (lecture 3, ≈1:09:41).
+
+Preferences also appear as an **evaluation** signal. Generated code can be scored by whether it passes
+tests, by its similarity to reference code, "or you could ask a human to give preferences on the code
+outcomes" (lecture 5, ≈1:14:49). Quantitative and qualitative evaluations "carry signal" of different
+kinds (≈1:10:13). Lecture 5 also reports, as its understanding of the research, that people "tend not
+to be good at actual percentages" and bucket uncertainty into low, medium and high (≈1:01:01). That
+remark is about people reading uncertainty that a tool shows them, not about answering queries.
 
 ## Revealed versus stated preferences
 
@@ -217,3 +242,6 @@ which lecture 2 develops; see [discrete choice models](discrete-choice-models.md
 - [Metric elicitation](metric-elicitation.md): a worked case where the number of queries is known.
 - [Mechanism design](mechanism-design.md): eliciting values from strategic participants.
 - [Lecture 4 — Mechanism Design](04-mechanism-design.md)
+- [Human–AI interaction](human-ai-interaction.md): where queries sit in designing, enabling and
+  evaluating an interaction.
+- [Lecture 5 — Human-centered Design](05-human-centered-design.md)

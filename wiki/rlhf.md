@@ -11,7 +11,9 @@ equations; [lecture 2](02-preference-models.md), which supplies the choice model
 comparison step and comments on language-model preference data; and three remarks in
 [lecture 3](03-model-based-preference-optimization.md), which is about classification metrics, not
 language models; and two applications in [lecture 4](04-mechanism-design.md), on pricing prompt
-completions and paying labellers. Later lectures are not yet in this knowledge base.
+completions and paying labellers; and [lecture 5](05-human-centered-design.md), which reads
+preference tuning as a fix for an interface problem. Later lectures are not yet in this knowledge
+base.
 
 ## Why it matters to the course
 
@@ -146,6 +148,21 @@ sets labellers' pay by the predicted harm of labelling toxic or psychologically 
 (≈1:14:31–1:19:55). See [whose preferences](whose-preferences.md#the-labour-of-labelling) and
 [mechanism design](mechanism-design.md).
 
+## Remarks from the human-centered design lecture
+
+Lecture 5 reads the pipeline's later stages as **interface design**. By "our best understanding", a
+base language model, before supervised fine-tuning or RLHF, "has all the knowledge to do all the
+things chatbots do, but it's just extremely hard to interface with", and "what supervised fine-tuning
+and preference tuning does is solve the interface problem" (lecture 5, ≈27:08). Koyejo flags this as
+"an analogy, not complete" (≈27:08). There are big models you can chat with without supervised
+fine-tuning, but "they're worse at chat", so "chats are a way to close the interface gap" (≈27:54).
+
+The same lecture places pairwise preferences among the tools that **enable** a human–AI interaction,
+as distinct from designing it and evaluating it (≈41:45). On evaluation, it notes that benchmarks rank
+language models fairly precisely, but "people's lived experiences with models often diverge from what
+the benchmarks say" (≈1:10:13). It also notes that "LM as a judge is more and more popular" as an
+automated evaluator (≈1:15:36). See [human–AI interaction](human-ai-interaction.md).
+
 ## Who does this work
 
 Most published work on real-world learning from human preferences comes from industry. Collecting
@@ -174,3 +191,6 @@ plans to implement RLHF-style methods, including DPO, on language models in home
 - [Metric elicitation](metric-elicitation.md): the classification setting lecture 3's remarks come from.
 - [Mechanism design](mechanism-design.md): pricing completions with a preference-driven auction.
 - [Lecture 4 — Mechanism Design](04-mechanism-design.md)
+- [Human–AI interaction](human-ai-interaction.md): preference tuning as interface design, and
+  evaluating with people.
+- [Lecture 5 — Human-centered Design](05-human-centered-design.md)

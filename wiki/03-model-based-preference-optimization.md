@@ -398,7 +398,8 @@ garbled in the captions), multiclass settings, more complex metrics, and setting
 stakeholders (≈1:05:01). There is also applied work, in a paper, that implemented the idea with
 stakeholders. There, eliciting this way "seemed to better reflect their preferences than some other
 default approach". Koyejo says he may return to it in the course's lecture on HCI (≈1:05:01,
-≈1:05:47), probably the *Human-centered Design* lecture, which is not yet in this knowledge base.
+≈1:05:47). That is the *Human-centered Design* lecture ([lecture 5](05-human-centered-design.md)),
+whose recording does not mention metric elicitation.
 
 ## The hard part: asking the question
 

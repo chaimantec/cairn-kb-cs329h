@@ -185,7 +185,8 @@ Koyejo marks several neighbouring areas as important but out of scope (≈27:47�
 - **HCI in depth.** The course touches on human–computer interaction but does not go deep, for
   reasons of expertise and scope. HCI experience "will generally serve you well", including the
   practical side, such as designing a study and getting IRB approval, which many on campus have
-  never done. He encourages projects that take this on (≈29:20, ≈30:07).
+  never done. He encourages projects that take this on (≈29:20, ≈30:07). The course's lecture on the
+  subject is [lecture 5, Human-centered Design](05-human-centered-design.md).
 - **Human feedback across the whole ML pipeline.** He shows a taxonomy figure from a recent paper,
   borrowed from a colleague's slides whose name the captions lose. It shows human feedback shaping
   data selection, labelling, model selection, training, evaluation, deployment and context

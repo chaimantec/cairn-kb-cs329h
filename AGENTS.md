@@ -75,6 +75,10 @@ printed slips, which slides were rendered and why) goes in
   Read every ratio outlier against its own original paragraph **and the neighbouring ones**. A
   sentence moved across a marker raises one paragraph and lowers its neighbour, often only the first
   out of band, and the agent's explanation of an outlier is a claim to check, not evidence.
+- **Quote sweep.** Check every quoted span on the pages a run writes against the edited transcripts
+  by script, with markers, speaker tags and `[Ed:]` marks stripped. The expected non-matches are site
+  text, such as schedule titles, and captioned forms, which are checked against the verbatim captions
+  instead. Every run so far has found paraphrases inside quote marks this way, the parent's own included.
 - **Topic pages** open with a `**Sources so far:**` line naming the lectures they draw on. Update
   it when a later lecture adds to the page, and update the coverage note in `INDEX.md` and the
   "not yet in this KB" lecture list with it.

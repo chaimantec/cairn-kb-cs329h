@@ -7,11 +7,11 @@ website names three threads: inverse reinforcement learning, metric elicitation,
 learning from human feedback. It mixes lectures, invited speakers and student-led paper discussions,
 with homework (60%) and a group project (40%).
 
-> **Coverage: lectures 1–4 of 8.** This knowledge base covers **lecture 1 (Introduction)**,
+> **Coverage: lectures 1–5 of 8.** This knowledge base covers **lecture 1 (Introduction)**,
 > **lecture 2 (Preference Models)**, **lecture 3 (Model-based Preference Optimization, on metric
-> elicitation)** and **lecture 4 (Mechanism Design)** of the eight catalog lectures. Questions about
-> later lectures (human-centered design, ethics, voting, and the guest lecture by Joseph Jay
-> Williams) **cannot be answered from this KB yet**. Say so rather than answering from the lecture 1 overview, which only
+> elicitation)**, **lecture 4 (Mechanism Design)** and **lecture 5 (Human-centered Design)** of the
+> eight catalog lectures. Questions about the later lectures (ethics, voting, and the guest lecture by
+> Joseph Jay Williams) **cannot be answered from this KB yet**. Say so rather than answering from the lecture 1 overview, which only
 > previews them. Some sessions on the schedule are not in the catalog at all. Lecture 2 defers the
 > ideal point model to one of them, and lecture 3 builds on an active-learning lecture (Oct 14)
 > that is not in the catalog either. Lecture 4 follows bandit and Bayesian-optimization sessions
@@ -27,7 +27,8 @@ with homework (60%) and a group project (40%).
 > fell on Oct 30. Lecture 1 is the Sep 23 introduction on the schedule; lecture 2 is most likely the
 > Sep 25 "Individual Preference Models" lecture; lecture 3 is the Oct 16 "Model-based Preferences
 > Optimization via Preference Elicitation" lecture; lecture 4 is the Oct 28 "Aggregated Preference
-> Optimization via Mechanism Design" lecture. Each page gives the evidence.
+> Optimization via Mechanism Design" lecture; lecture 5 is the Nov 11 "Human-centered Design" lecture.
+> Each page gives the evidence.
 
 ## Lectures
 
@@ -73,9 +74,21 @@ with homework (60%) and a group project (40%).
   from Koyejo's group, pricing prompt completions with a second-price auction on values predicted
   from pairwise feedback, and a reverse auction that pays data labellers by predicted harm. Includes
   a table of every student question.
+- [Lecture 5 — Human-centered Design](wiki/05-human-centered-design.md): what it takes for AI tools
+  to work for people, with HCI as the frame around the course's technical methods. Covers HCI and the
+  Norman door (bad design, not bad users), prompting as the AI version of a confusing door, technology
+  that "disappears", the interface arc from punch cards to GUIs and from code to prompting to chat,
+  technology-centric versus user-centric design (and supervised fine-tuning and preference tuning as
+  a fix for an interface problem), design thinking (five whys, Henry Ford's faster horses, the double
+  diamond's discover, define, develop and deliver stages), human–AI interaction as a field and the
+  design, enable and evaluate steps (the course's tools sit in "enable"), prompt engineering as an
+  interface problem, the PromptCharm example of a hybrid interface for image prompts, trust and
+  reliance (appropriate reliance, over- and underreliance), fairness, accountability, transparency
+  (the aspirin and MRI argument) and ethics, human, computer and mixed initiative, and how to evaluate
+  human–AI interaction (quantitative versus qualitative, intrinsic versus extrinsic, metrics, what,
+  who and when). Includes a table of every student question.
 
-Catalog lectures not yet in this KB: 5 Human-centered Design · 6 Ethics · 7 Voting ·
-8 Guest Lecture: Joseph Jay Williams.
+Catalog lectures not yet in this KB: 6 Ethics · 7 Voting · 8 Guest Lecture: Joseph Jay Williams.
 
 ## Topics
 
@@ -94,7 +107,8 @@ Each topic page gathers one concept across lectures, and says at the top which l
   this than industry; the comparison step as a choice model, reward as utility, and language-model
   preference data as stated preferences (lecture 2); reward, utility and metric as one object, and
   why query counts are unknown for RLHF (lecture 3); pricing prompt completions and paying labellers
-  with preference-driven auctions (lecture 4).
+  with preference-driven auctions (lecture 4); supervised fine-tuning and preference tuning as a fix
+  for an interface problem, and benchmarks versus lived experience (lecture 5).
 - [Asking humans for preferences: queries, comparisons and noise](wiki/preference-queries.md): query
   efficiency; explicit versus implicit preference signals; absolute ratings versus pairwise
   comparisons (the exoskeleton result); ratings and rankings and the models for each; dueling
@@ -102,14 +116,21 @@ Each topic page gathers one concept across lectures, and says at the top which l
   bound); one-shot versus interactive collection; population-level versus example-level questions;
   revealed versus stated preferences; human inconsistency, Bernoulli models, rationality as
   transitivity, the uniqueness assumption behind binary search, and the rational-human assumption;
-  prices as revealed preferences, strategic answerers and incentive compatibility (lecture 4).
-  Lectures 1–4.
+  prices as revealed preferences, strategic answerers and incentive compatibility (lecture 4);
+  queries as tools for enabling a human–AI interaction, and human preference as an evaluation
+  signal (lecture 5). Lectures 1–5.
 - [Mechanism design: auctions, incentives and truthful elicitation](wiki/mechanism-design.md): the
   vocabulary (types, allocation, payments, revenue, utility), incentive compatibility at three levels
   of information and individual rationality, a table comparing posted prices, first- and
   second-price auctions, reserve prices, Myerson's auction and generalized second price, learning
   inside mechanisms, and the two preference-driven mechanisms from lecture 4. Lectures 1, 3 and 4
   (lecture 4 is the main source).
+- [Human–AI interaction and human-centered design](wiki/human-ai-interaction.md): why the course
+  cares about HCI, technology-centric versus user-centric design, design thinking and the double
+  diamond, where the course's preference tools fit (enabling an interaction, between designing and
+  evaluating it), posing questions people can answer (metric elicitation, PromptCharm), trust and
+  reliance, transparency, and evaluating human–AI systems (how, what, who, when). Lectures 1, 3 and 5
+  (lecture 5 is the main source).
 - [Reward hacking](wiki/reward-hacking.md): the boat game-playing agent, length and bullet-point bias in
   chatbots, and over-optimizing against a learned reward model.
 - [Metric elicitation and inverse decision theory](wiki/metric-elicitation.md): using pairwise
@@ -117,13 +138,16 @@ Each topic page gathers one concept across lectures, and says at the top which l
   metric matters (Netflix Prize, recidivism prediction), the six steps of the binary-classification
   method from linear metrics to binary search, its assumptions and limits, the extensions, and
   inverse decision theory (inferring a decision threshold from answers about individual examples,
-  with probabilistic bisection). Lectures 1 and 3.
+  with probabilistic bisection). Lectures 1 and 3; neither lecture 4 nor lecture 5 takes up the
+  material lecture 3 deferred to them.
 - [Whose preferences: representation, labour and ethics](wiki/whose-preferences.md): choosing which
   humans to ask; aggregation and strategic agents; representative sampling; one shared utility
   versus one per person; the Pew-survey finding that language models reflect Californian opinions;
   the ethics of outsourced preference labelling; fairness measures that disagree (the
   recidivism-prediction case) and the impossibility results in fairness; who decides a mechanism's
-  goal, and paying labellers by harm (lecture 4). Lectures 1–4.
+  goal, and paying labellers by harm (lecture 4); designing for some people and leaving others out,
+  fairness, accountability (the asylum-translation example), and stakeholder groups as evaluators
+  (lecture 5). Lectures 1–5.
 
 ## Raw materials
 

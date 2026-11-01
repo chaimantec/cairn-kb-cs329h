@@ -10,7 +10,10 @@ the class to the papers (≈1:08:43–1:10:16), and [lecture 3](03-model-based-p
 which develops metric elicitation for binary classification and sketches inverse decision theory.
 Lecture 3 defers a third paper, linking metric elicitation to mechanism design, to a later lecture
 (lecture 3, ≈1:20:34). The *Mechanism Design* lecture ([lecture 4](04-mechanism-design.md)) does not
-take it up in its recording, so that link is not covered in this knowledge base.
+take it up in its recording, so that link is not covered in this knowledge base. Lecture 3 also said
+it might use its stakeholder study as an example in the course's HCI lecture (≈1:05:47). The
+*Human-centered Design* lecture ([lecture 5](05-human-centered-design.md)) does not mention metric
+elicitation.
 
 ## The problem it addresses
 
@@ -116,7 +119,8 @@ stakeholders matter or where trade-offs are tricky and hard to specify (lecture 
 applied study with stakeholders, in which eliciting this way "seemed to better reflect their
 preferences than some other default approach" (≈1:05:47). The multiclass case is harder. The
 confusion matrix's degrees of freedom grow roughly quadratically with the number of classes
-(≈48:51). The link to mechanism design is deferred (≈1:20:34), and lecture 4 does not return to it.
+(≈48:51). The link to mechanism design is deferred (≈1:20:34), and lecture 4 does not return to it. Nor does
+lecture 5, the HCI lecture, return to the stakeholder study.
 
 ## Inverse decision theory
 
@@ -154,3 +158,5 @@ threshold is like preference tuning (≈1:19:01).
 - [Whose preferences](whose-preferences.md): fairness and stakeholder disagreement as reasons to
   elicit at all.
 - [Lecture 1 — Introduction](01-introduction.md#beyond-language)
+- [Human–AI interaction](human-ai-interaction.md): posing a question a stakeholder can answer, as a
+  design problem.

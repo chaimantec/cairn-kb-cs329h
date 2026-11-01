@@ -9,8 +9,10 @@ away" from it (≈19:57, ≈21:29).
 modelling individuals separately or together, and
 [lecture 3](03-model-based-preference-optimization.md) on fairness measures that disagree, and
 [lecture 4](04-mechanism-design.md) on who decides what outcome a mechanism aims for and on paying
-labellers by harm. The catalog has a later lecture titled *Ethics* and one titled *Voting*. Neither
-is yet in this knowledge base.
+labellers by harm, and [lecture 5](05-human-centered-design.md) on designing for some people and
+leaving others out, fairness, accountability, and stakeholder groups in evaluation. Lecture 5 defers
+accountability, fairness, transparency and ethics to "a separate lecture" (≈57:58). The catalog has a
+later lecture titled *Ethics* and one titled *Voting*. Neither is yet in this knowledge base.
 
 ## Choosing the humans
 
@@ -50,6 +52,29 @@ applications" pool everyone. Choice models in psychology and economics model ind
 because they treat them as an important signal, and machine learning is "slowly understanding" that
 they might matter more and more (≈55:53, ≈56:39). See
 [discrete choice models](discrete-choice-models.md).
+
+## Designing for some people, and leaving others out
+
+Lecture 5 raises the same choice from the design side. Ease of use depends on who the users are and
+how they were educated, so the right way to frame a design question is "really deeply contextualized.
+So who are the people? What are you trying to solve? How do we solve the problem for these people?"
+(lecture 5, ≈22:34). That brings an equity question: "if I'm designing for a particular set of people,
+am I leaving a bunch of other people that could benefit out?" (≈23:20). Contextualizing forces you to
+think about your audience and then about how to broaden it (≈23:20).
+
+The lecture lists fairness and accountability among the things interactive systems must be designed
+for (≈57:58). **Fairness** means tools that do not "behave very differently" across gender, sex, other
+demographics or socioeconomic factors (≈1:01:46, ≈1:02:33). **Accountability** means thinking through
+the consequences of mistakes. A mistranslation is low-risk when you are playing with a chatbot and
+high-risk when it is used in an asylum decision: "This is someone's life", and "this happens,
+actually, it's a big issue" (≈1:02:33). Stakeholders such as the user or a judge should understand a
+tool's gaps, so that accountability is correctly placed (≈1:03:21).
+
+Who evaluates a system is a related choice. Koyejo separates **stakeholder groups**, such as experts,
+lay users, teachers, parents and students, from **demographic groups**, and says the target group
+makes a big difference to how an evaluation is designed (≈1:15:36, ≈1:16:21). Closing the lecture, he
+names "social choice as an alternative to hyperpersonalization" as one of the course's tools for
+enabling human–AI interaction (≈1:17:57). See [human–AI interaction](human-ai-interaction.md).
 
 ## Whose opinions models end up with
 
@@ -132,3 +157,5 @@ the tool helps each stakeholder find theirs (≈33:08).
 - [Lecture 3 — Model-based Preference Optimization](03-model-based-preference-optimization.md)
 - [Lecture 4 — Mechanism Design](04-mechanism-design.md)
 - [Mechanism design](mechanism-design.md): strategic participants, and who chooses the objective.
+- [Human–AI interaction](human-ai-interaction.md): trust, reliance, transparency and evaluation.
+- [Lecture 5 — Human-centered Design](05-human-centered-design.md)
