@@ -6,8 +6,10 @@ of several outputs they prefer, and the model is optimized to produce what they 
 treats it as one instance of a broader problem, learning from explicit human preference signals,
 rather than as the whole subject. Its specific interest is the step where preferences are collected.
 
-**Sources so far:** [lecture 1](01-introduction.md) only, which surveys the pipeline without
-equations. Later lectures are not yet in this knowledge base.
+**Sources so far:** [lecture 1](01-introduction.md), which surveys the pipeline without
+equations, and [lecture 2](02-preference-models.md), which supplies the choice models behind the
+comparison step and comments on language-model preference data. Later lectures are not yet in this
+knowledge base.
 
 ## Why it matters to the course
 
@@ -100,6 +102,22 @@ generalization beyond the preference data critical, and reward models are easily
   label-consistency queries, feature selection, and corrections to parsers (≈33:13–≈35:37). See
   [lecture 1](01-introduction.md#language-models-where-most-people-meet-preference-learning).
 
+## The comparison step as a choice model
+
+Lecture 2 treats the human comparison step as one more application of discrete choice models: the
+same tools model "the choices of decision makers", "typically in this second stage", across
+documents (≈6:14, ≈7:00). Two links make the connection. **Reward is utility**: "what is called
+reward" in reinforcement learning "is equivalent to what economists might call utility" (≈12:25).
+And the context need not be hand-featurized: a model can go "straight from phrase completions to a
+prediction of choice" (≈11:39). The lecture does not work through a language-model example in the
+audio. The models themselves are on the [discrete choice models](discrete-choice-models.md) page.
+
+Koyejo also argues that language-model preference experiments mostly collect **stated**
+preferences. Someone is shown completions in a room and asked which they prefer, and "there's no
+cost to making a decision either way". He thinks the field does not engage enough with the gap
+between stated and revealed preferences (lecture 2, ≈1:09:07). See
+[revealed versus stated preferences](preference-queries.md#revealed-versus-stated-preferences).
+
 ## Who does this work
 
 Most published work on real-world learning from human preferences comes from industry. Collecting
@@ -121,4 +139,6 @@ plans to implement RLHF-style methods, including DPO, on language models in home
 ## Related pages
 
 - [Asking humans for preferences](preference-queries.md): pairwise versus absolute queries, and noise.
+- [Discrete choice models](discrete-choice-models.md): the utility models behind comparison data.
 - [Lecture 1 — Introduction](01-introduction.md)
+- [Lecture 2 — Preference Models](02-preference-models.md)

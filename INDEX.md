@@ -7,11 +7,12 @@ website names three threads: inverse reinforcement learning, metric elicitation,
 learning from human feedback. It mixes lectures, invited speakers and student-led paper discussions,
 with homework (60%) and a group project (40%).
 
-> **Coverage: lecture 1 of 8.** This knowledge base covers only **lecture 1 (Introduction)** of the
-> eight catalog lectures. Questions about later lectures (preference models, model-based preference
-> optimization, mechanism design, human-centered design, ethics, voting, and the guest lecture by
-> Joseph Jay Williams) **cannot be answered from this KB yet**. Say so rather than answering from
-> the lecture 1 overview, which only previews them.
+> **Coverage: lectures 1–2 of 8.** This knowledge base covers **lecture 1 (Introduction)** and
+> **lecture 2 (Preference Models)** of the eight catalog lectures. Questions about later lectures
+> (model-based preference optimization, mechanism design, human-centered design, ethics, voting, and
+> the guest lecture by Joseph Jay Williams) **cannot be answered from this KB yet**. Say so rather
+> than answering from the lecture 1 overview, which only previews them. Lecture 2 also defers the
+> ideal point model to a lecture that is not in the catalog.
 >
 > **No slides.** The course has not published its slides for any offering, so this KB is built
 > from the lecture transcripts. Pages cite **transcript timestamps** (≈MM:SS), not slide numbers.
@@ -20,7 +21,8 @@ with homework (60%) and a group project (40%).
 >
 > **Numbering.** Files use the **catalog position** (lecture 1 = `01-…`). The catalog's order does
 > not follow the website schedule; for example, the Williams guest lecture is catalog position 8 but
-> fell on Oct 30. Lecture 1 is the Sep 23 introduction on the schedule.
+> fell on Oct 30. Lecture 1 is the Sep 23 introduction on the schedule; lecture 2 is most likely the
+> Sep 25 "Individual Preference Models" lecture (its page gives the evidence).
 
 ## Lectures
 
@@ -34,33 +36,48 @@ with homework (60%) and a group project (40%).
   exoskeleton, metric elicitation, inverse decision theory, recommender systems and the Netflix
   Prize, RL from demonstrations); and the rational-human assumption the course starts from.
   Includes a table of every student question.
+- [Lecture 2 — Preference Models (discrete choice models)](wiki/02-preference-models.md): choice
+  models from the ground up. Applications (marketing, route planning, activity sequencing, language)
+  and a short history (Thurstone, McFadden, Luce, BART); utility as a deterministic part plus noise,
+  and why only orderings are identified; binary choice as logistic or probit regression; the
+  two-item logit as logistic regression on feature differences; extreme value, Gaussian and
+  correlated noise; multiclass models; pooling versus modelling individuals; Likert scales and the
+  ordered logit; rankings and the Plackett–Luce ("exploded logit") model; rationality as
+  transitivity; and revealed versus stated preferences. Includes a table of every student question.
 
-Catalog lectures not yet in this KB: 2 Preference Models · 3 Model-based Preference Optimization ·
-4 Mechanism Design · 5 Human-centered Design · 6 Ethics · 7 Voting · 8 Guest Lecture: Joseph Jay
-Williams.
+Catalog lectures not yet in this KB: 3 Model-based Preference Optimization · 4 Mechanism Design ·
+5 Human-centered Design · 6 Ethics · 7 Voting · 8 Guest Lecture: Joseph Jay Williams.
 
 ## Topics
 
-Each topic page gathers one concept across lectures. All currently draw on lecture 1 only, and each
-says so at the top.
+Each topic page gathers one concept across lectures, and says at the top which lectures it draws on.
+
+- [Discrete choice models: utility, noise and the logit family](wiki/discrete-choice-models.md): the
+  model (utility = deterministic part + noise), identification only up to ordering, a table mapping
+  noise assumptions to models (logit, probit, multiclass, correlated noise, ordered logit,
+  Plackett–Luce), fitting them as ordinary machine learning, pooling versus individual models, and the
+  assumptions to keep in view. Lectures 1–2.
 
 - [RLHF and the language-model pipeline](wiki/rlhf.md): pre-training, SFT, comparison data and PPO as
   lecture 1 lays them out; why preference collection is best done interactively; reward models
   (what they are mechanically, why separately trained ones don't plug in, DPO and behaviour cloning
   as ways to do without one, and Koyejo's case for keeping them); RLAIF; why academia does less of
-  this than industry.
+  this than industry; the comparison step as a choice model, reward as utility, and language-model
+  preference data as stated preferences (lecture 2).
 - [Asking humans for preferences: queries, comparisons and noise](wiki/preference-queries.md): query
   efficiency; explicit versus implicit preference signals; absolute ratings versus pairwise
-  comparisons (the exoskeleton result); dueling bandits; one-shot versus interactive collection;
-  human inconsistency, Bernoulli models, and the rational-human assumption.
+  comparisons (the exoskeleton result); ratings and rankings and the models for each; dueling
+  bandits; one-shot versus interactive collection; revealed versus stated preferences; human
+  inconsistency, Bernoulli models, rationality as transitivity, and the rational-human assumption.
 - [Reward hacking](wiki/reward-hacking.md): the boat game-playing agent, length and bullet-point bias in
   chatbots, and over-optimizing against a learned reward model.
 - [Metric elicitation and inverse decision theory](wiki/metric-elicitation.md): using pairwise
   preferences to set a classifier's trade-offs when errors have asymmetric costs; inferring a decision
   threshold from feedback.
 - [Whose preferences: representation, labour and ethics](wiki/whose-preferences.md): choosing which
-  humans to ask; aggregation and strategic agents; representative sampling; the Pew-survey finding
-  that language models reflect Californian opinions; the ethics of outsourced preference labelling.
+  humans to ask; aggregation and strategic agents; representative sampling; one shared utility
+  versus one per person; the Pew-survey finding that language models reflect Californian opinions;
+  the ethics of outsourced preference labelling.
 
 ## Raw materials
 

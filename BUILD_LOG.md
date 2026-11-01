@@ -18,6 +18,7 @@ every build follows, and each lesson in general form, are in
 | Lecture | Runs |
 | --- | --- |
 | 1 Introduction | Run 1 |
+| 2 Preference Models | Run 2 |
 
 ## Runs
 

@@ -66,6 +66,9 @@ printed slips, which slides were rendered and why) goes in
   timestamp sequence, number-inventory diff of the bodies, per-paragraph word ratio within
   0.72–1.10. The agent marks speaker turns `*Student:*` / `*Koyejo:*` and unclear passages
   `[Ed: unclear — "…"]`.
+  Key the ratio check **by timestamp, not by position**, and re-run the marker diff in the parent
+  rather than trusting the agent's report: a dropped paragraph shifts a positional pairing, and
+  neighbouring ~45-second paragraphs are similar enough in length to pass.
 - **Topic pages** open with a `**Sources so far:**` line naming the lectures they draw on. Update
   it when a later lecture adds to the page, and update the coverage note in `INDEX.md` and the
   "not yet in this KB" lecture list with it.

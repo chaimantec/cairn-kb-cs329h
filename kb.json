@@ -9,11 +9,11 @@
     "courseUrl": "https://web.stanford.edu/class/cs329h/fall2024/"
   },
   "coverage": {
-    "lecturesCovered": 1,
+    "lecturesCovered": 2,
     "lecturesTotal": 8,
-    "transcripts": 1,
-    "wikiLecturePages": 1,
-    "wikiTopicPages": 5
+    "transcripts": 2,
+    "wikiLecturePages": 2,
+    "wikiTopicPages": 6
   },
   "materials": {
     "primary": "transcripts",
@@ -35,12 +35,16 @@
     }
   },
   "provenance": {
-    "builtBy": ["claude-opus-5-5", "claude-sonnet-5-5"],
+    "builtBy": [
+      "claude-opus-5-5",
+      "claude-sonnet-5-5"
+    ],
     "caveats": [
-      "Partial coverage: lecture 1 of 8 only. Topic pages draw on lecture 1 alone.",
-      "Transcript-only: no slides exist publicly, so several papers shown on the lecture-1 slides are described as the lecture describes them and are not named or cited.",
-      "Transcripts were copy-edited by a Sonnet subagent and checked by script (identical timestamp sequence, number inventory, per-paragraph word-count ratio). Lecture 1 has 22 passages marked [Ed: unclear].",
-      "The lecture-1 recording ends at about 1:17, as the lecturer turns to choice models; that material is not in the video."
+      "Partial coverage: lectures 1-2 of 8. Topic pages draw on lectures 1 and 2 only.",
+      "Transcript-only: no slides exist publicly, so papers and references shown on the slides are described as the lectures describe them and are not named or cited. Formulas on the wiki pages are rebuilt from what the lecturer says aloud, not read off slides.",
+      "Transcripts were copy-edited by a Sonnet subagent and checked by script (identical timestamp sequence, number inventory, per-paragraph word-count ratio keyed by timestamp). Lecture 1 has 22 passages marked [Ed: unclear], lecture 2 has 21. One lecture-2 paragraph (1:11:28) dropped by the agent was restored in the parent.",
+      "The lecture-1 recording ends at about 1:17, as the lecturer turns to choice models; that material is not in the video.",
+      "Lecture 2 defers the ideal point model to the next lecture and skips its planned exercises; neither is in the lecture 2 recording, and the schedule's next individual-preference-models lecture (Sep 30) is not in the catalog."
     ]
   },
   "entryPoint": "INDEX.md",

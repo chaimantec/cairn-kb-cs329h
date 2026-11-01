@@ -5,8 +5,9 @@ up valuing, and the work of supplying preferences has costs of its own for the p
 Lecture 1 says this course will "almost always have a meaningful ethical angle" and will "not shy
 away" from it (≈19:57, ≈21:29).
 
-**Sources so far:** [lecture 1](01-introduction.md) only. The catalog has a later lecture titled
-*Ethics* and one titled *Voting*. Neither is yet in this knowledge base.
+**Sources so far:** [lecture 1](01-introduction.md), and [lecture 2](02-preference-models.md) on
+modelling individuals separately or together. The catalog has a later lecture titled *Ethics* and one
+titled *Voting*. Neither is yet in this knowledge base.
 
 ## Choosing the humans
 
@@ -26,6 +27,17 @@ that "I don't think the literature is complete on this question". There is some 
 across groups, through representative sampling or other ways of balancing preferences. The ML subfield
 is "fairly early on", with more work in economics and ethics, and he suggests it as a project direction
 (≈22:15, ≈23:01).
+
+## One model for everyone, or one each
+
+A choice model has to decide whether different people share one utility. Lecture 2 lays out the
+options: a single shared utility, treating everyone's choices as observations of one model; a
+separate utility for each person, with no benefit from modelling them jointly; or per-person
+parameters tied together, additively or as a low-rank set (≈31:52, ≈32:37). "Almost all the ML
+applications" pool everyone. Choice models in psychology and economics model individual differences,
+because they treat them as an important signal, and machine learning is "slowly understanding" that
+they might matter more and more (≈55:53, ≈56:39). See
+[discrete choice models](discrete-choice-models.md).
 
 ## Whose opinions models end up with
 
@@ -70,4 +82,6 @@ its applications.
 ## Related pages
 
 - [Asking humans for preferences](preference-queries.md): rationality, noise and strategic behaviour.
+- [Discrete choice models](discrete-choice-models.md)
 - [Lecture 1 — Introduction](01-introduction.md)
+- [Lecture 2 — Preference Models](02-preference-models.md)
